@@ -2,6 +2,7 @@
 using System;
 using Assessment.Array.Basic;
 using Assessment.Others;
+using Assessment.Pattern_Making;
 
 namespace Assessment
 {
@@ -9,7 +10,11 @@ namespace Assessment
     {
         static void Main(string[] args)
         {
-            Duplicate.FindDuplicate();
+            //12321
+            // 1221
+            SimplePyramidPattern.piramid_m2(5);
+
+            //Duplicate.FindDuplicate();
             //int a = 1221;
             //int x = a / 10;
             //int x1 = a % 10;

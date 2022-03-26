@@ -31,13 +31,34 @@ namespace Assessment.Others
             return x == revertedNumber || x == revertedNumber / 10;
         }
 
-        public void IsPalindrome_m2(int num1)
+        public static bool IsPalindrome_m2(int num1)
         {
             string s1 = num1.ToString();
+
             char[] arr = num1.ToString().ToCharArray();
             System.Array.Reverse(arr);
 
+            string s2 = string.Join("", arr);
 
+            return s1 == s2;
+
+        }
+
+        // Top 1
+        public static bool IsPalindrome_m3(int num1)
+        {           
+            int reminder = 0;
+            int result = 0;
+            int temmp = num1;
+
+            while (num1 !=0)
+            {
+                reminder = num1 % 10;
+                result = result * 10 + reminder;
+                num1 = num1 / 10;
+            }
+
+            return temmp == result;
 
         }
     }
