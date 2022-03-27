@@ -6,6 +6,7 @@ namespace Assessment.Others
 {
     public class Palindrome
     {
+        #region Int palindrome
         public static bool IsPalindrome_m1(int x)
         {
             // Special cases:
@@ -46,12 +47,12 @@ namespace Assessment.Others
 
         // Top 1
         public static bool IsPalindrome_m3(int num1)
-        {           
+        {
             int reminder = 0;
             int result = 0;
             int temmp = num1;
 
-            while (num1 !=0)
+            while (num1 != 0)
             {
                 reminder = num1 % 10;
                 result = result * 10 + reminder;
@@ -61,5 +62,32 @@ namespace Assessment.Others
             return temmp == result;
 
         }
+        #endregion
+
+        #region string palindrome
+
+        //https://www.interviewbit.com/c-sharp-interview-questions/#reverse-a-string-in-csharp
+        public static void chkPalindrome(string str)
+        {
+            bool flag = false;
+            for (int i = 0, j = str.Length - 1; i < str.Length / 2; i++, j--)
+            {
+                if (str[i] != str[j])
+                {
+                    flag = false;
+                    break;
+                }
+                else
+                    flag = true;
+            }
+            if (flag)
+            {
+                Console.WriteLine("Palindrome");
+            }
+            else
+                Console.WriteLine("Not Palindrome");
+
+        }
+        #endregion
     }
 }

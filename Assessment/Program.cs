@@ -3,6 +3,9 @@ using System;
 using Assessment.Array.Basic;
 using Assessment.Others;
 using Assessment.Pattern_Making;
+using Assessment.String;
+using Assessment.Integer;
+using Assessment.Array.DS_Algo;
 
 namespace Assessment
 {
@@ -10,9 +13,12 @@ namespace Assessment
     {
         static void Main(string[] args)
         {
-            //12321
-            // 1221
-            SimplePyramidPattern.piramid_m2(5);
+            int[] arr = { 1, 3, 0, 0, 4, 0, 9 };
+
+            Move_zeros_array_end.Move_zero_array_logicmojo_M3(arr);
+
+
+            ClsString.findallsubstring("Sujeet");
 
             //Duplicate.FindDuplicate();
             //int a = 1221;
