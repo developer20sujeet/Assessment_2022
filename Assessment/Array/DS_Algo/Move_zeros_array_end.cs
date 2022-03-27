@@ -43,6 +43,8 @@ namespace Assessment.Array.DS_Algo
         {
             // int[] arr = { 1, 3, 0, 0, 4, 0, 9 };
             int cntr = 0;
+
+            // counter will hold the position at 0 and i will keep shifting toward non zero value
             for (int i = 0; i < arr.Length; i++)
             {
                 if(arr[i] !=0)
