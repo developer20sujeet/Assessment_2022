@@ -15,7 +15,7 @@ namespace Assessment
         {
             int[] arr = { 2, 3, 4, 5, 7, 8, 9 };
 
-           int a = new  Binary_Search_Array().Binary_Search_Array_logicmojo_M2(arr, 8, 0, 6);
+           new  Binary_Search_Array().Binary_Search_Array_M2(arr, 8, 0, 6);
 
 
             ClsString.findallsubstring("Sujeet");

@@ -6,13 +6,13 @@ namespace Assessment.Array.DS_Algo
 {
     public class Binary_Search_Array
     {
-        public  void Binary_Search_Array_M2(int[] arr, int keyToSearch, int low, int high)
+        public void Binary_Search_Array_M2(int[] arr, int keyToSearch, int low, int high)
         {
             int a = System.Array.BinarySearch(arr, keyToSearch);
         }
 
         //https://logicmojo.com/cracking_interview/#SampleLecture
-        public  int Binary_Search_Array_logicmojo_M2(int[] arr, int keyToSearch, int low, int high)
+        public int Binary_Search_Array_logicmojo_M2(int[] arr, int keyToSearch, int low, int high)
         {
             // Binary search work on sorted array 
             // Stop Recursive 
@@ -23,16 +23,18 @@ namespace Assessment.Array.DS_Algo
             int mid = low + ((high - low) / 2);
 
             if (arr[mid] == keyToSearch)
+            {
                 return mid;
+            }
             else if (keyToSearch < arr[mid])
             {
-                 return Binary_Search_Array_logicmojo_M2(arr, keyToSearch, low, mid - 1);
+                return Binary_Search_Array_logicmojo_M2(arr, keyToSearch, low, mid - 1);
             }
-            else 
+            else
             {
                 return Binary_Search_Array_logicmojo_M2(arr, keyToSearch, mid + 1, high);
             }
-            
+
         }
 
     }
