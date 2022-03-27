@@ -80,6 +80,7 @@ namespace Assessment.Pattern_Making
         //*******
         public static void piramid_m1(int num )
         {
+            // row 
             for (int i = 1; i <num; i++)
             {
                 // put space 
@@ -87,11 +88,13 @@ namespace Assessment.Pattern_Making
                 {
                     Console.Write(" ");
                 }
+                // put star in each row 
                 for (int k = 1;  k<=i; k++)
                 {
                     Console.Write("*");
 
                 }
+                // put star from second row 
                 for (int l = 2; l <= i; l++)
                 {
                     Console.Write("*");
@@ -111,6 +114,7 @@ namespace Assessment.Pattern_Making
         //https://www.youtube.com/watch?v=CDJW5BqiMSY&list=PLCqWuVe6WFLK9ykzGW86zfBh8daCbk952&index=14
         public static void piramid_m2(int num)
         {
+            // row
             for (int i = 1; i < num; i++)
             {
                 // put space 
