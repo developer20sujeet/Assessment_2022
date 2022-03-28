@@ -20,6 +20,8 @@ namespace Assessment.Array.DS_Algo
                 return -1;
 
             // Divide = Binary search work on divide rule 
+            // Why low + >>> addeded 
+            // 
             int mid = low + ((high - low) / 2);
 
             if (arr[mid] == keyToSearch)
@@ -28,10 +30,12 @@ namespace Assessment.Array.DS_Algo
             }
             else if (keyToSearch < arr[mid])
             {
+                // mid - 1=  search left of middle [divide] 
                 return Binary_Search_Array_logicmojo_M2(arr, keyToSearch, low, mid - 1);
             }
             else
             {
+                // mid + 1=  search right of middle [divide] 
                 return Binary_Search_Array_logicmojo_M2(arr, keyToSearch, mid + 1, high);
             }
 

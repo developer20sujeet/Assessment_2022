@@ -45,5 +45,20 @@ namespace Assessment.Array.Basic
                 Console.ReadKey();
             }
         }
+
+        public static void FindDuplicate_m4()
+        {
+            HashSet<int> mySet = new HashSet<int>();
+            int[] array = { 10, 5, 10, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9, 11, 12, 12 };
+            int count = 1;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if(mySet.Add(array[i] == false))
+                {
+                    // print Diplicate 
+                }
+            }
+              
+        }
     }
 }

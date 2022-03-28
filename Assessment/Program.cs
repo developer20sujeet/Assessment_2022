@@ -6,6 +6,8 @@ using Assessment.Pattern_Making;
 using Assessment.String;
 using Assessment.Integer;
 using Assessment.Array.DS_Algo;
+using Assessment.LeetCode;
+using System.Collections.Generic;
 
 namespace Assessment
 {
@@ -13,9 +15,16 @@ namespace Assessment
     {
         static void Main(string[] args)
         {
-            int[] arr = { 2, 3, 4, 5, 7, 8, 9 };
+            HashSet<int> mySet = new HashSet<int>();
 
-           new  Binary_Search_Array().Binary_Search_Array_M2(arr, 8, 0, 6);
+            bool b2 = mySet.Add(1);
+            bool a1 = mySet.Add(1);
+
+
+            int a =  Math.Max(5, 10);
+            int[] arr = { 7, 6, 4, 3, 1 };
+
+            //new BestTime_Buy_Sell_Stock().MaxProfit(arr);
 
 
             ClsString.findallsubstring("Sujeet");
