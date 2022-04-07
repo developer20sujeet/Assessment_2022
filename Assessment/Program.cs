@@ -16,9 +16,22 @@ namespace Assessment
         static void Main(string[] args)
         {
 
-           
+            int[] arr = { 7, 1, 5, 3, 6, 4 };
 
-            Console.Read();
+            int minValue = int.MaxValue;
+            int profit = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+
+                if(arr[i]< minValue)
+                {
+                    minValue = arr[i];
+                }
+
+            }
+
+          
         }
 
 

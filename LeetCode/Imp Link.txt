@@ -1,0 +1,16 @@
+﻿
+1. https://cheonhyangzhang.gitbooks.io/leetcode-solutions/content/415-add-strings.html
+
+
+
+What I learned 
+====================
+1. Math1 % , /
+
+      int digit = sum % 10;
+      carry =     sum / 10;
+
+2. Convert number character to integer 
+     num1[i] - '0'
+
+3. 

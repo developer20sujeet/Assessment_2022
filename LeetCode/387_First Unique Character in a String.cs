@@ -12,31 +12,34 @@ namespace LeetCode
     //https://leetcode.com/problems/first-unique-character-in-a-string/
     public class First_Unique_Character_in_a_String
     {
+      
         public int FirstUniqChar(string s)
         {
+            int IndexPostion = 0;
 
-            int ans = 0;
-
-            Dictionary<char, int> hm = new Dictionary<char, int>();
+            Dictionary<char, int> dic = new Dictionary<char, int>();
 
             foreach (char ch in s)
             {
 
-                if (!hm.ContainsKey(ch))
-                    hm.Add(ch, 1);
+                if (!dic.ContainsKey(ch))
+                    dic.Add(ch, 1);
                 else
-                    hm[ch]++;
+                    dic[ch]++; //  increment the value of string character 
 
             }
+            
+            // trick is that find string character in Dictionary and find the count 
             foreach (char ch in s)
             {
-
-                if (hm[ch] == 1)
-                    return ans;
-                ans++;
+                if (dic[ch] == 1)
+                    return IndexPostion;
+                IndexPostion++;
             }
             return -1;
 
         }
+
+
     }
 }
