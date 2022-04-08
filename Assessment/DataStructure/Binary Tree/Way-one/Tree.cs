@@ -5,7 +5,6 @@ using System.Text;
 namespace Assessment.DataStructure.Binary_Tree
 {
     // Step 0 - Always think two things in Binary tree - 1. Create a clas on binary tree 2. fill up binary tree. 3. Traversal of it 
-
     // Step 1 - Create a Node class and it left and right properties of type Node class 
     public class Node
     {
@@ -30,17 +29,14 @@ namespace Assessment.DataStructure.Binary_Tree
 
             // -1 means no child 
             if (data == -1) return null;
-
             //Create Node
             root = new Node(data);
 
             Console.WriteLine("Enter left for " + data);
-
             // Keep taking left of Node 
             root.left = createTree();
 
             Console.WriteLine("Enter right for " + data);
-
             // Keep taking right of Node 
             root.right = createTree();
 
