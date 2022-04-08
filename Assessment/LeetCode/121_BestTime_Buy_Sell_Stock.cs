@@ -52,7 +52,7 @@ namespace Assessment.LeetCode
                 }
                 else 
                 {
-                    Max_val =  Math.Max(Max_val, prices[i] - min_val);
+                    Max_val = System.Math.Max(Max_val, prices[i] - min_val);
                 }
 
             }

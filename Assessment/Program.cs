@@ -8,6 +8,7 @@ using Assessment.Integer;
 using Assessment.Array.DS_Algo;
 using Assessment.LeetCode;
 using System.Collections.Generic;
+using Assessment.DataStructure.Binary_Tree;
 
 namespace Assessment
 {
@@ -15,21 +16,7 @@ namespace Assessment
     {
         static void Main(string[] args)
         {
-
-            int[] arr = { 7, 1, 5, 3, 6, 4 };
-
-            int minValue = int.MaxValue;
-            int profit = 0;
-
-            for (int i = 0; i < arr.Length; i++)
-            {
-
-                if(arr[i]< minValue)
-                {
-                    minValue = arr[i];
-                }
-
-            }
+           Tree.Driver();
 
           
         }

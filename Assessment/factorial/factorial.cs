@@ -14,12 +14,16 @@ namespace Assessment.factorial
         }
         public static void M1()
         {
-            int i, f = 1, num = 4;
+            //int i, f = 1, num = 4;
 
-            for (i = 1; i <= num; i++)
-                f = f * i;
+            //for (i = 1; i <= num; i++)
+            //    f = f * i;
 
-            Console.Write("The Factorial of {0} is: {1}\n", num, f);
+            int num = 5;
+            for (int i = num - 1; i > 0; i--)
+                num = num * i;
+
+            //Console.Write("The Factorial of {0} is: {1}\n", num, num);
         }
         public static void M2()
         {

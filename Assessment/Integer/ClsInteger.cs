@@ -25,7 +25,7 @@ namespace Assessment.Integer
             if (number == 2) return true;
             if (number % 2 == 0) return false;
 
-            var squareRoot = (int)Math.Floor(Math.Sqrt(number));
+            var squareRoot = (int)System.Math.Floor(System.Math.Sqrt(number));
 
             for (int i = 3; i <= squareRoot; i += 2)
             {
