@@ -38,5 +38,18 @@ namespace Assessment.factorial
 
             Console.Write("The Factorial is -"+ sum );
         }
+
+        //  Better way 
+        public static int fac(int num)
+        {
+            if (num <= 1)
+                return 1;
+            else
+            {
+                return num * fac(num - 1);
+            }
+
+           
+        }
     }
 }
