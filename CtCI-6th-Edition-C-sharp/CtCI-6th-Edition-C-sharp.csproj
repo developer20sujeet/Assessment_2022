@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>CtCI_6th_Edition_C_sharp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Ch 01. Arrays and Strings\Q1_01_Is_Unique\QuestionB.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Ch 01. Arrays and Strings\Q1_01_Is_Unique\QuestionB.cs" />
+  </ItemGroup>
+
+</Project>

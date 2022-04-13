@@ -6,14 +6,47 @@ namespace Assessment.String
 {
     public class ClsString
     {
+        #region Got it  
+        public void reverse(string str)
+        {
+            char[] charArray = str.ToCharArray();
+
+            int j = 0;
+            for (int i = str.Length - 1; i >= 0; i--)
+            {
+                charArray[j] = str[i];
+                j++;
+            }
+
+            string reversedstring = new string(charArray);
+
+            Console.WriteLine(reversedstring);
+
+        } 
+
+        public void reverse(string str)
+        {
+            char[] charArray = str.ToCharArray();
+
+            for (int i = 0, j = str.Length - 1; i < j; i++, j--)
+            {
+                charArray[i] = str[j];
+                charArray[j] = str[i];
+            }
+
+            string reversedstring = new string(charArray);
+            Console.WriteLine(reversedstring);
+        }
+        #endregion
 
         //https://www.interviewbit.com/c-sharp-interview-questions/#reverse-a-string-in-csharp
 
-        #region ReverseString
+        #region Reference 
         public static void ReverseString_m2(string str)
         {
 
             char[] charArray = str.ToCharArray();
+
             for (int i = 0, j = str.Length - 1; i < j; i++, j--)
             {
                 charArray[i] = str[j];

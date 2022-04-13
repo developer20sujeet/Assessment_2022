@@ -5,10 +5,11 @@
 
         /// <summary>
         /// Reference -  mycodeschool -  https://www.youtube.com/watch?v=TzeBrDU-JaY&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=5
+        /// Merge sort is asked 98 % of time . Most efficient sorting algorithm .
         /// </summary>
         /// <param name="unSortedArr"></param>
         /// <returns></returns>
-        public  int[] MergeSortAlog(int[] unSortedArr)
+        public  int[] MergeSort_Array_Alog(int[] unSortedArr)
         {
             int unSortedArrLength = unSortedArr.Length;
 
@@ -33,10 +34,10 @@
             }
 
             // Further break down left array untill only one index left 
-            MergeSortAlog(leftArr);
+            MergeSort_Array_Alog(leftArr);
 
             // Further break down left array untill only one index left 
-            MergeSortAlog(rightArr);
+            MergeSort_Array_Alog(rightArr);
 
             // Finally sort the array 
             Merge(leftArr, rightArr, unSortedArr);

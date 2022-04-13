@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CtCI_6th_Edition_C_sharp.Ch_01._Arrays_and_Strings.Q1_01_Is_Unique
+{
+    // Note - Did not understood 
+
+    /* Assumes only letters a through z. */
+    public static boolean isUniqueChars(String str)
+    {
+
+        if (str.Length > 26)
+        { // Only 26 characters
+            return false;
+        }
+
+        int checker = 0;
+        for (int i = 0; (i < str.Length); i++)
+        {
+            int val = (str[i] - 'a');
+
+            if (((checker & (1 + val)) > 0))
+            {
+                return false;
+            }
+
+            checker = (checker | (1 + val));
+        }
+
+        return true;
+    }
+
+			return true;
+		}
+
+public static void driver
+{
+
+			string[]
+    words = { "abcde", "hello", "apple", "kite", "padle" };
+
+			for (string word in words) {
+        //System.out.println(word + ": " + isUniqueChars(word));
+    }
+}
+
+}
+}

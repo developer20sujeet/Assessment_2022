@@ -21,6 +21,7 @@ namespace Assessment.DataStructure.String
                 return false;
 
             Dictionary<char, int> dic1 = new Dictionary<char, int>();
+
             // string 1
             for (int i = 0; i < s1.Length; i++)
             {

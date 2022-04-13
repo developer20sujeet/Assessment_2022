@@ -19,7 +19,7 @@ namespace Assessment
         {
             int[] unSortedArr = { 9, 4, 1, 8, 2, 6, 8, 10 };
 
-            unSortedArr= new MergeSort().MergeSortAlog(unSortedArr);
+            unSortedArr= new MergeSort().MergeSort_Array_Alog(unSortedArr);
 
             // bool isValid= word_count_matching.IsValid_way2("level", "leevl");
 
