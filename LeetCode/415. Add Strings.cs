@@ -10,6 +10,7 @@ namespace LeetCode
     /// You must solve the problem without using any built-in library for handling large integers(such as BigInteger). 
     /// You must also not convert the inputs to integers directly.
     /// Input: num1 = "11", num2 = "123" | Output: "134"
+    /// Charles swab
     /// </summary>
     public class Add_Strings
     {
@@ -56,6 +57,7 @@ namespace LeetCode
             char[] num11 = num1.ToCharArray();
             char[] num22 = num2.ToCharArray();
 
+            // reversed because it can simply start adding from 0 postion - that is last digit 
             Array.Reverse(num11);
             Array.Reverse(num22);
 
@@ -78,8 +80,9 @@ namespace LeetCode
                 }
 
                 int sum = c1 + c2 + carry;
-                // Take first digit from last of number 
+                // Take last first digit 
                 int digit = sum % 10;
+
                 // take all number from left except one number from right 
                 carry = sum / 10;
                 result = digit + result;
@@ -93,6 +96,8 @@ namespace LeetCode
             return result;
 
         }
+        
+        // Bad practice - just here to see where was my rank
         public static string AddStrings_v2_myself(string num1, string num2)
         {
             if (num1.Length > num2.Length)

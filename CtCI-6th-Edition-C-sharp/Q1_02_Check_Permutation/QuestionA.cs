@@ -4,6 +4,8 @@ using System.Text;
 
 namespace CtCI_6th_Edition_C_sharp.Q1_02_Check_Permutation
 {
+    //A permutation of a string S iis another string that contains the same characters, 
+    //only the order of characters can be different. For example, “abcd” and “dabc” are permutations of each other
     public class QuestionA
     {
         public static string sort(string s1)
@@ -19,6 +21,7 @@ namespace CtCI_6th_Edition_C_sharp.Q1_02_Check_Permutation
             return false;
 
             return sort(s1).Equals(sort(s2));
+            
         }
         public static void driver()
         {

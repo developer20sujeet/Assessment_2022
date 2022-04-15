@@ -6,11 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="9_Palindrome Number.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="9_Palindrome Number.cs" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>

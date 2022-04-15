@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode", "LeetCode\LeetCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerRanks", "HackerRanks\HackerRanks.csproj", "{D99FB351-403C-4B06-9FA9-1928B15C0799}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtCI-6th-Edition-C-sharp", "CtCI-6th-Edition-C-sharp\CtCI-6th-Edition-C-sharp.csproj", "{5B61DE9E-3C96-414F-9B26-9088D90E09FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CtCI-6th-Edition-C-sharp", "CtCI-6th-Edition-C-sharp\CtCI-6th-Edition-C-sharp.csproj", "{5B61DE9E-3C96-414F-9B26-9088D90E09FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrjRestApi", "PrjRestApi\PrjRestApi.csproj", "{DE951E13-D4F7-40EA-838A-1DA50F74B424}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5B61DE9E-3C96-414F-9B26-9088D90E09FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B61DE9E-3C96-414F-9B26-9088D90E09FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B61DE9E-3C96-414F-9B26-9088D90E09FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE951E13-D4F7-40EA-838A-1DA50F74B424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE951E13-D4F7-40EA-838A-1DA50F74B424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE951E13-D4F7-40EA-838A-1DA50F74B424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE951E13-D4F7-40EA-838A-1DA50F74B424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
