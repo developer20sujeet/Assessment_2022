@@ -24,7 +24,7 @@ namespace Assessment.String
 
         } 
 
-        public void reverse(string str)
+        public void reverseV2(string str)
         {
             char[] charArray = str.ToCharArray();
 

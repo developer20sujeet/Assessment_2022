@@ -3,6 +3,13 @@
 
 2. https://github.com/Prince-1501/Complete-DSA-Preparation
 
+https://leetcode.com/discuss/interview-question/448285/List-of-questions-sorted-by-common-patterns.
+https://leetcode.com/list/xksb9pgr/
+
+https://www.techinterviewhandbook.org/best-practice-questions
+
+https://www.techinterviewhandbook.org/grind75
+
 
 What I learned 
 ====================
@@ -15,3 +22,5 @@ What I learned
      num1[i] - '0'
 
 3. 
+
+
