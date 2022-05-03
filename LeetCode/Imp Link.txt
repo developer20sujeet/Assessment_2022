@@ -3,12 +3,25 @@
 
 2. https://github.com/Prince-1501/Complete-DSA-Preparation
 
-https://leetcode.com/discuss/interview-question/448285/List-of-questions-sorted-by-common-patterns.
-https://leetcode.com/list/xksb9pgr/
+    https://leetcode.com/discuss/interview-question/448285/List-of-questions-sorted-by-common-patterns.
+    https://leetcode.com/list/xksb9pgr/
 
-https://www.techinterviewhandbook.org/best-practice-questions
+    https://www.techinterviewhandbook.org/best-practice-questions
 
-https://www.techinterviewhandbook.org/grind75
+    https://www.techinterviewhandbook.org/grind75
+
+    #Algorithmic Patterns for Coding Interviews: Intro
+    https://www.youtube.com/watch?v=cpgAULF6Vpw
+    https://seanprashad.com/leetcode-patterns/
+    https://edcode.xyz/
+
+
+    Leetcode 101: The 14 Patterns Introduction | Workshop (Winter 2022)
+    https://www.youtube.com/watch?v=g6TLB_tAaCI
+
+    https://www.techinterviewhandbook.org/best-practice-questions
+
+
 
 
 What I learned 
