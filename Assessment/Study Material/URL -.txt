@@ -21,3 +21,11 @@ DSA
 =================
 1. Which algorithms/data structures should I "recognize" and know by name?
 https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name/155649#155649
+
+
+System Design 
+https://systeminterview.com/scale-from-zero-to-millions-of-users.php
+https://github.com/G33kzD3n/Catalogue
+https://github.com/alex-xu-system/bytebytego
+
+
