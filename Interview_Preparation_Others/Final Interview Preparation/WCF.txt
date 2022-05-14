@@ -1,0 +1,168 @@
+
+WCF Provide three Important Security feature : CIA
+Confidentiality  : Encrypting Messages mitigate eavesdropping attack
+Integrity	 : Signing Messages Mitigate tampering and Replay attacks
+Authentication   : Proof of identity mitigate Spoofing and impersonation attacks
+
+signed vs encrypted 
+all bindin securit at transport layer or message layer
+
+http://www.dotnetfunda.com/articles/show/962/security-in-wcf
+http://www.codeproject.com/Articles/36732/WCF-FAQ-Part-security-related-FAQ
+http://www.codeproject.com/Articles/443576/Implementing-WCF-Service-Behaviors
+http://www.codeproject.com/Articles/89858/WCF-Concurrency-Single-Multiple-and-Reentrant-and
+http://www.codeproject.com/Articles/36732/WCF-FAQ-Part-security-related-FAQ
+http://www.codeproject.com/Articles/38857/WCF-FAQ-Part-Transactions
+http://www.codeproject.com/Articles/443576/Implementing-WCF-Service-Behaviors
+
+
+Protection level : a way of developer to force administartor to use binding that support sining and encription
+------------------------
+
+On A particular Message
+on indivisual operation and fault contract
+on service contract
+
+if protection lvel set by developer as stated above . host will fail if the required protection lvel is not met by endpoint
+
+use protection level propeerty on attribute 
+
+----------------------
+Configuring security in Binding
+
+there is two fundamental configuration option for 
+security that is 
+
+1)Security mode: Message , transport mixed
+2) Client Credentail Type : Username , Certificate,windiow,Issuedtoken
+
+
+
+---------------------------
+Transport security
+
+each transport has built in security layer like
+HTTP using SSL
+TCP/IP  unsing Kerberos
+
+it provide point to point security between node , it is ideal when there
+message not travel through intermediaries like router switch briade rtc
+
+Transport security tradeoff
+-- mature , better performance
+-- drawback 
+----- point to point authentication
+------ Constraint the type of  clinet crdetail
+
+--------------------------------
+----------------------
+Message security
+-- Provide end to end security across all nodes
+-- messahe security pushes authentication down into SOAP Header
+
+Message security tradoff
+-- Support wide variety of credentail
+-- end to end authentication
+drawback
+---Newer is not always better for security
+-- Performance can be significantly worse
+
+----------------------------------------------
+ClientCrdentialType
+-- Select the type of credential the clinet must present
+-- Also Implicitly dictates the type of crdetial the server must posses
+
+kinds of ClientCrdentialType
+-----None , userName,Certificate,Window,Basic,Digest,IssueToken
+
+----------------------------------------------------------------
+
+Type of client Credential in message security
+None
+Windows
+Username
+Certificate
+Issued token
+
+-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shivprasad
+
+http://www.codeproject.com/Articles/89858/WCF-Concurrency-Single-Multiple-and-Reentrant-and  
+
+
+
+http://www.topwcftutorials.net/2012/09/WCF-FAQs-Part2.html
+http://www.topwcftutorials.net/2012/10/WCF-FAQs-Part3.html
+
+
+
+7. How we can use MessageContract partially with DataContract for a service operation in WCF?
+
+MessageContract must be used all or none. If we are using MessageContract into an operation signature, then we must use MessageContract as the only parameter type and as the return type of the operation.

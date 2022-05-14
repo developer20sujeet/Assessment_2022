@@ -1,0 +1,22 @@
+kendu UI
+
+MTOM in wcf
+file sending in WCF
+namespace used in wcf
+what is mean by serializable attribute
+name space for WCF
+
+webservice javascript method call
+
+code first WCF
+how to call top 10 in ef , paging MVC
+if i want to update one column then what will be sql statement
+
+indentity in asp.net
+
+membership in MVC - authentication & autherization
+custome dataannotation 
+html action java script call
+asynchronus call
+
+how to optimize store procedure 

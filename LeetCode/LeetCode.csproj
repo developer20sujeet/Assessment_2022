@@ -7,10 +7,12 @@
 
   <ItemGroup>
     <Compile Remove="9_Palindrome Number.cs" />
+    <Compile Remove="Algorithmic Patterns for Coding Interviews\1_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="9_Palindrome Number.cs" />
+    <None Include="Algorithmic Patterns for Coding Interviews\1_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
   </ItemGroup>
 
 </Project>
