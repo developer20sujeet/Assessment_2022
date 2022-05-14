@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment", "Assessment\Assessment.csproj", "{206D5634-9932-4150-B9CF-91EB915F422C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment_All_Others", "Assessment\Assessment_All_Others.csproj", "{206D5634-9932-4150-B9CF-91EB915F422C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCode", "LeetCode\LeetCode.csproj", "{6BB9026C-DCA3-4D61-8D3D-AAE38E2C4EE9}"
 EndProject
@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjRestApi", "PrjRestApi\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-Sharp-Fundamental", "C-Sharp-Fundamental\C-Sharp-Fundamental.csproj", "{BF8B788D-7971-4944-9BFD-56EF8EDD63BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksMaterial", "BooksMaterial\BooksMaterial.csproj", "{8DE50AA4-FABF-4AC1-94D4-1E56F47A5488}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksMaterial", "BooksMaterial\BooksMaterial.csproj", "{8DE50AA4-FABF-4AC1-94D4-1E56F47A5488}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA", "DSA\DSA.csproj", "{7D97BF51-608F-4810-8BD2-E2F6B6F0DE4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA_OOD_Solid_SysDesign", "DSA\DSA_OOD_Solid_SysDesign.csproj", "{7D97BF51-608F-4810-8BD2-E2F6B6F0DE4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

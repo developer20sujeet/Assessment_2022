@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Solid\" />
+    <Folder Include="ooda\" />
+    <Folder Include="SystemDesign\" />
+  </ItemGroup>
+
 </Project>
