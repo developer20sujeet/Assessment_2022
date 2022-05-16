@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrjRestApi", "PrjRestApi\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-Sharp-Fundamental", "C-Sharp-Fundamental\C-Sharp-Fundamental.csproj", "{BF8B788D-7971-4944-9BFD-56EF8EDD63BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksMaterial", "BooksMaterial\BooksMaterial.csproj", "{8DE50AA4-FABF-4AC1-94D4-1E56F47A5488}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA_OOD_Solid_SysDesign", "DSA\DSA_OOD_Solid_SysDesign.csproj", "{7D97BF51-608F-4810-8BD2-E2F6B6F0DE4E}"
 EndProject
 Global
@@ -49,10 +47,6 @@ Global
 		{BF8B788D-7971-4944-9BFD-56EF8EDD63BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF8B788D-7971-4944-9BFD-56EF8EDD63BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF8B788D-7971-4944-9BFD-56EF8EDD63BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8DE50AA4-FABF-4AC1-94D4-1E56F47A5488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DE50AA4-FABF-4AC1-94D4-1E56F47A5488}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DE50AA4-FABF-4AC1-94D4-1E56F47A5488}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DE50AA4-FABF-4AC1-94D4-1E56F47A5488}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7D97BF51-608F-4810-8BD2-E2F6B6F0DE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D97BF51-608F-4810-8BD2-E2F6B6F0DE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D97BF51-608F-4810-8BD2-E2F6B6F0DE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU

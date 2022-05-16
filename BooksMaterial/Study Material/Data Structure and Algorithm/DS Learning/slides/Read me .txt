@@ -1,5 +1,0 @@
-Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer
-1. https://www.youtube.com/watch?v=RBSGKlAvoiM
-2. https://github.com/developer20sujeet/DEPRECATED-data-structures/tree/master/slides
-3. https://www.youtube.com/channel/UCD8yeTczadqdARzQUp29PJw
-==========================================================================================
