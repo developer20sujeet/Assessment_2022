@@ -40,6 +40,7 @@ namespace LeetCode
                     // Substract last one index value so that following next index can be added
                     // After below line is will be some of from index 1 to 3 
                     windowSum -= num[start];
+
                     // to get next slid window 
                     start++;
                 }
@@ -48,6 +49,7 @@ namespace LeetCode
 
         }
 
+        #region Other way 
         /// <summary>
         /// Runtime: 303 ms, faster than 75.88% of C# online submissions for Maximum Average Subarray I.
         //  Memory Usage: 59.6 MB, less than 5.02% of C# online submissions for Maximum Average Subarray I.
@@ -116,7 +118,8 @@ namespace LeetCode
 
 
             return max;
-        }
+        } 
+        #endregion
 
     }
 }

@@ -1,14 +1,13 @@
-﻿using Assessment.Array;
+﻿
 using System;
-using Assessment.Array.Basic;
+
 using Assessment.Others;
 using Assessment.Pattern_Making;
-using Assessment.String;
-using Assessment.DataStructure.String;
+
 using Assessment.Integer;
-using Assessment.Algo;
+
 using System.Collections.Generic;
-using Assessment.DataStructure.Binary_Tree;
+
 
 
 namespace Assessment
@@ -19,7 +18,7 @@ namespace Assessment
         {
             int[] unSortedArr = { 9, 4, 1, 8, 2, 6, 8, 10 };
 
-            unSortedArr= new MergeSort().MergeSort_Array_Alog(unSortedArr);
+            //unSortedArr= new MergeSort().MergeSort_Array_Alog(unSortedArr);
 
             // bool isValid= word_count_matching.IsValid_way2("level", "leevl");
 
