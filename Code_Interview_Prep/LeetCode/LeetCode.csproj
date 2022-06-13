@@ -15,4 +15,8 @@
     <None Include="Algorithmic Patterns for Coding Interviews\1_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="LeetCode_CompanyWise\" />
+  </ItemGroup>
+
 </Project>
