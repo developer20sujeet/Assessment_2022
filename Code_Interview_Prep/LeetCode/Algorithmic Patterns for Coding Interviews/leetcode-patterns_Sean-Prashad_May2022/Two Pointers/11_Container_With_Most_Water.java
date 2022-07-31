@@ -1,6 +1,7 @@
 class Solution {
     public int maxArea(int[] height) {
-        if (height == null || height.length < 2) {
+       
+       if (height == null || height.length < 2) {
             return 0;
         }
 

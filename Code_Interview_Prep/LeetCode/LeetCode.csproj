@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,15 +7,18 @@
 
   <ItemGroup>
     <Compile Remove="9_Palindrome Number.cs" />
-    <Compile Remove="Algorithmic Patterns for Coding Interviews\1_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
+    <Compile Remove="Algorithmic Patterns for Coding Interviews\1_Two_Ponter\167_Two_Sum_II.cs" />
+    <Compile Remove="Algorithmic Patterns for Coding Interviews\2_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="9_Palindrome Number.cs" />
-    <None Include="Algorithmic Patterns for Coding Interviews\1_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
+    <None Include="Algorithmic Patterns for Coding Interviews\1_Two_Ponter\167_Two_Sum_II.cs" />
+    <None Include="Algorithmic Patterns for Coding Interviews\2_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Algorithmic Patterns for Coding Interviews\3_Binary_Search\" />
     <Folder Include="LeetCode_CompanyWise\" />
   </ItemGroup>
 
