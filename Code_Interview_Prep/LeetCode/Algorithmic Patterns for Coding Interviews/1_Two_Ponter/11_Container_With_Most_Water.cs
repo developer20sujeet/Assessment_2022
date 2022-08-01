@@ -7,6 +7,7 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._1_Two_Ponter
         /// <summary>
         /// https://www.youtube.com/watch?v=e0kiAdtRGk8&list=PLPyD8bF-abzuUAt2Lf--gpMlrQNjxXgDX&index=9
         /// https://leetcode.com/problems/container-with-most-water/
+        /// https://www.youtube.com/watch?v=WfVGJOEQ2nE
         /// 
         /// Tips 
         ///   1. You need to find Areas of rectangle = Areas = Lenght * width 
