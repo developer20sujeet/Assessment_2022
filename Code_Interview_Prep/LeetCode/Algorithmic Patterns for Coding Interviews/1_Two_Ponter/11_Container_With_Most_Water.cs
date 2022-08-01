@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._1_Two_Ponter
+namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews.Two_Ponter
 {
-    internal class Solution
+    internal class Solution11
     {
         /// <summary>
         /// https://www.youtube.com/watch?v=e0kiAdtRGk8&list=PLPyD8bF-abzuUAt2Lf--gpMlrQNjxXgDX&index=9
