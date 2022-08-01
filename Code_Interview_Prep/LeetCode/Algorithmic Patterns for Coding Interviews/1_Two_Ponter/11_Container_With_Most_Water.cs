@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._1_Two_Ponter
 {
@@ -36,13 +34,13 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._1_Two_Ponter
             {
                 // We know that a container can hold water till Minium of wall width
                 // so we need to find Minium of wall width between two wall
-                int minContainerWallWidth = Math.Min(height[start], height[end]);
+                int minContainerWallheight = Math.Min(height[start], height[end]);
 
                 // we need wall lenght to know area of rectangle 
-                int totalContainerLength = end - start;
+                int totalContainerWidth = end - start;
 
                 // Total area of rectangle 
-                long totalContainerAreaToHoldWater = minContainerWallWidth * totalContainerLength;
+                long totalContainerAreaToHoldWater = minContainerWallheight * totalContainerWidth;
 
                 // Take MaxArea
                 maxArea = Math.Max(maxArea, totalContainerAreaToHoldWater);
