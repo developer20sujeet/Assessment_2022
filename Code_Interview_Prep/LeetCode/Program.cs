@@ -11,11 +11,13 @@ namespace LeetCode
         {
             Console.WriteLine("Hello World!");
 
-            int[] arr = {2,7,11,15};
+           // int[] arr = {2,7,11,15}; // 9
+
+            int[] arr1 = { 5,2,2 }; // 2
 
             //  Two_SumII_Input_Array_Is_Sorted.TwoSumII(arr, 9);
 
-            Solution.twoSum(arr, 9);
+            Solution.twoSum(arr1, 4);
 
 
         }

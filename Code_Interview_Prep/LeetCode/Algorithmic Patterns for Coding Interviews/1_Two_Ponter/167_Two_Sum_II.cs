@@ -4,18 +4,21 @@ using System.Text;
 
 namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews.Two_Ponter
 {
-	/// <summary>
-	/// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-	/// https://www.youtube.com/watch?v=4YKBwKnTnlM
-	/// 
-	/// Solution : Two Pointer
-	/// </summary>
-	public class Solution
+    /// <summary>
+    /// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+    /// https://www.youtube.com/watch?v=4YKBwKnTnlM
+    /// https://www.youtube.com/watch?v=2wVjt3yhGwg
+    /// 
+    /// Solution : Two Pointer
+    /// </summary>
+    public class Solution
 	{
 
         /// <summary>
         /// Runtime: 211 ms, faster than 63.69% of C# online submissions for Two Sum II - Input Array Is Sorted.
         /// Memory Usage: 44.7 MB, less than 84.30% of C# online submissions for Two Sum II - Input Array Is Sorted.
+        /// 
+        /// We will use TWO POINTER here 
         /// </summary>
         /// <param name="arr"></param>
         /// <param name="target"></param>
