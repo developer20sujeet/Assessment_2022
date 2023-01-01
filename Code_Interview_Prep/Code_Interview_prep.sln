@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General_Programming", "Gene
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General_Programming", "General_Programming\General_Programming.csproj", "{D861F0DB-275B-4A89-B88B-C30A74631083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{D861F0DB-275B-4A89-B88B-C30A74631083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D861F0DB-275B-4A89-B88B-C30A74631083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D861F0DB-275B-4A89-B88B-C30A74631083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{CAE5653B-9753-45D1-B67C-3BF998001A21} = {95DA5FA8-60B6-4CA4-A686-62BF3EE7B68A}
 		{2C4E973A-DB80-49A6-A433-AAB2BD143D2F} = {95DA5FA8-60B6-4CA4-A686-62BF3EE7B68A}
 		{D861F0DB-275B-4A89-B88B-C30A74631083} = {5A4DF675-432A-4BBE-94BC-73FADBCEA6B7}
+		{95A1D20B-07FD-4395-A3A1-399BBFEC0D17} = {95DA5FA8-60B6-4CA4-A686-62BF3EE7B68A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37352311-BFEC-4187-BFAD-9E5C41AA4FAA}

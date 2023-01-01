@@ -10,6 +10,47 @@ namespace LeetCode
     /// </summary>
     public class Maximum_Average_Subarray_I
     {
+
+
+        public static double FindMaxAverage_Educative(int[] nums , int k)
+        {
+            // Store running window sum
+            double  WindowSum = 0;  
+
+            // Keep MAx value - assigned negative value to stop any negative add/sum 
+            double MaxSum = double.NegativeInfinity;
+
+            // It help to slid the window by one 
+            int Windowstart = 0;
+
+            for (int windowEnd = 0; windowEnd < nums.Length; windowEnd++)
+            {
+                // Add next element 
+                WindowSum+= nums[windowEnd];
+
+                // K1-1 - Array is 0 index based that's why k-1 as array -0,1,2,3 is total 4 element 
+                // windowEnd > k-1 - this is because I need to take all element of array
+                // windowEnd = k-1 - this is because Window size -k equal to array elment then we need to find max
+                if (windowEnd >=k-1)
+                {
+                    // Need max so that we can store in variable to find max
+                    MaxSum = Math.Max(MaxSum, WindowSum/(double)k);
+
+                    // This is main feature of sliding window - in total sum we will slide by 1 forward and add and remove last 1 element value 
+                    // Slide one forward - remove one from backword
+                    WindowSum -= nums[Windowstart];
+
+                    // help to slid and remove from backword in next iteration
+                    Windowstart++;
+                }
+
+            }
+
+            return MaxSum;
+
+        }
+
+
         /// <summary>
         /// https://www.youtube.com/watch?v=XfSgQvKfcys&list=PL7g1jYj15RUOjoeZAJsWjwV8XUo9r0hwc&index=2
         /// Algorithmic Patterns Sliding window algorithm   solving 
@@ -32,6 +73,7 @@ namespace LeetCode
                 windowSum += num[end];
 
                 // Give current window size =end - start + 1
+                // Think of very first index and window size of 0
                 if (end - start + 1 == k)
                 {
                     // Find Max 

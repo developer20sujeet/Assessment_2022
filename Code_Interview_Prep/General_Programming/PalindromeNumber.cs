@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace General_Programming
 {
+    //time complexity is O(log(n))
     internal class PalindromeNumber
     {
         /// <summary>
-        /// Way 1- 
+        /// Way 1- First Choice 
+        /// //  time complexity is O(log(n))
         /// </summary>
         /// <param name="x"></param>
         /// <returns></returns>
@@ -27,12 +29,14 @@ namespace General_Programming
             int reversed = 0;
             while (x > reversed)
             {
+                // x % 10 extracts the rightmost digit of x. For example, if x is 123, x % 10 is 3.
+                // reversed * 10 shifts all the digits of reversed one place to the left, adding a new rightmost digit with a value of 0. For example, if reversed is 12, reversed * 10 is 120.
                 reversed = reversed * 10 + x % 10;
-                x /= 10;
+                x /= 10;//used to take all number except last digit 
+
             }
 
-            // If the original number has an odd number of digits, we can ignore the middle digit
-            // by comparing x to reversed / 10.
+            // If the original number has an odd number of digits, we can ignore the middle digit by comparing x to reversed / 10.
             // If the original number has an even number of digits, x will equal reversed.
             return x == reversed || x == reversed / 10;
         }
@@ -61,7 +65,7 @@ namespace General_Programming
         }
 
         /// <summary>
-        /// Way 3 - 
+        /// Way 3 -    # 2 pointer approach - constant space complexity
         /// </summary>
         /// <param name="x"></param>
         /// <returns></returns>
