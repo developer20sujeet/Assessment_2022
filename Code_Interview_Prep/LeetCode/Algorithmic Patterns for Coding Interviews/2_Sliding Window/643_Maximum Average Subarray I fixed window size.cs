@@ -30,7 +30,8 @@ namespace LeetCode
 
                 // K1-1 - Array is 0 index based that's why k-1 as array -0,1,2,3 is total 4 element 
                 // windowEnd > k-1 - this is because I need to take all element of array
-                // windowEnd = k-1 - this is because Window size -k equal to array elment then we need to find max
+                // windowEnd = k-1 - this is because Window size k equal to array element index number then we need to find max 
+                // Step 1
                 if (windowEnd >=k-1)
                 {
                     // Need max so that we can store in variable to find max
@@ -38,9 +39,11 @@ namespace LeetCode
 
                     // This is main feature of sliding window - in total sum we will slide by 1 forward and add and remove last 1 element value 
                     // Slide one forward - remove one from backword
+                    // Step 2
                     WindowSum -= nums[Windowstart];
 
                     // help to slid and remove from backword in next iteration
+                    // Step 3
                     Windowstart++;
                 }
 

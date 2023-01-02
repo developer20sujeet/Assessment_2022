@@ -1,6 +1,6 @@
-﻿using LeetCode.Algorithmic_Patterns_for_Coding_Interviews.Two_Ponter;
-using System;
-
+﻿
+using LeetCode;
+using LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window;
 
 namespace LeetCode
 {
@@ -9,17 +9,11 @@ namespace LeetCode
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
-           // int[] arr = {2,7,11,15}; // 9
+            int[] arr1 = { 1, 3, 2, 6, -1, 4, 1, 8, 2 };
 
-            int[] arr1 = { 1,12,-5,-6,50,3}; // 2
+            int a = Substrings_Size_Three_with_Distinct_Characters.countGoodSubstrings_slidingWindow_Practice("icolgrjedehnd");
 
-            //  Two_SumII_Input_Array_Is_Sorted.TwoSumII(arr, 9);
-
-            //Solution.twoSum(arr1, 4);
-
-            Maximum_Average_Subarray_I.FindMaxAverage_Educative(arr1 , 4);
 
 
         }
