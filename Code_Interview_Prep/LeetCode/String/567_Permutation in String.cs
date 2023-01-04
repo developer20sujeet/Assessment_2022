@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace LeetCode
+namespace LeetCode.String
 {
     //https://leetcode.com/problems/permutation-in-string/submissions/
     // Need to understand 

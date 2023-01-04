@@ -1,0 +1,25 @@
+﻿
+1.https://www.techinterviewhandbook.org/grind75
+
+2. https://neetcode.io/practice  - 150 
+
+3. https://leetcode.com/problem-list/leetcode-curated-algo-170/ - 170 
+
+5. https://leetcode.com/problem-list/top-interview-questions/?page=2 -145
+
+4. https://seanprashad.com/leetcode-patterns/  
+
+6.. https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/ - Striver 
+
+7. https://leadcoding.in/dsa-sheet/  - fraz
+
+
+8. https://www.codingninjas.com/codestudio/problem-lists/striver-sde-sheet-problems  
+
+9. ALl Problem sheet 
+https://www.codingninjas.com/codestudio/problem-lists
+
+10. https://450dsa.com/
+
+
+11. https://workat.tech/problem-solving/lists/six-month-dsa-practice-sheet/practice

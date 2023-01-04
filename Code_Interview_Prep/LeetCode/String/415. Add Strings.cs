@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode
+namespace LeetCode.String
 {
     /// <summary>
     /// https://leetcode.com/problems/add-strings/
@@ -25,9 +25,9 @@ namespace LeetCode
                 num1 = num1.PadLeft(num2.Length, '0');
             }
 
-            String result = "";  int carry = 0;
+            String result = ""; int carry = 0;
 
-            for (int i = num1.Length - 1; i >= 0;  i--)
+            for (int i = num1.Length - 1; i >= 0; i--)
             {
                 int c1 = 0;
                 int c2 = 0;
@@ -96,7 +96,7 @@ namespace LeetCode
             return result;
 
         }
-        
+
         // Bad practice - just here to see where was my rank
         public static string AddStrings_v2_myself(string num1, string num2)
         {
@@ -118,7 +118,7 @@ namespace LeetCode
             }
             for (int i = num1.Length - 1; i >= 0; i--)
             {
-                int temp = (Convert.ToInt32(num1[i].ToString()) + Convert.ToInt32(num2[i].ToString()));
+                int temp = Convert.ToInt32(num1[i].ToString()) + Convert.ToInt32(num2[i].ToString());
 
                 if (temp.ToString().Length > 1)
                 {
@@ -130,7 +130,7 @@ namespace LeetCode
                 }
                 else
                 {
-                    result = (temp + previousVal) + result;
+                    result = temp + previousVal + result;
                 }
 
             }

@@ -1,6 +1,8 @@
 ﻿
 using LeetCode;
 using LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window;
+using LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.Medium;
+using System.Collections.Generic;
 
 namespace LeetCode
 {
@@ -10,9 +12,9 @@ namespace LeetCode
         static void Main(string[] args)
         {
 
-            int[] arr1 = { 1, 3, 2, 6, -1, 4, 1, 8, 2 };
+            int[] arr1 = { 3, 2 };
 
-            int a = Substrings_Size_Three_with_Distinct_Characters.countGoodSubstrings_slidingWindow_Practice("icolgrjedehnd");
+            IList<int> a = _438_Find_All_Anagrams_in_a_String.FindAnagrams("cbaebabacd", "abc");
 
 
 

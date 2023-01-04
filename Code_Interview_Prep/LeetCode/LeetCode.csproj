@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="9_Palindrome Number.cs" />
+    <None Include="Number\9_Palindrome Number.cs" />
     <None Include="Algorithmic Patterns for Coding Interviews\1_Two_Ponter\167_Two_Sum_II.cs" />
     <None Include="Algorithmic Patterns for Coding Interviews\2_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
   </ItemGroup>

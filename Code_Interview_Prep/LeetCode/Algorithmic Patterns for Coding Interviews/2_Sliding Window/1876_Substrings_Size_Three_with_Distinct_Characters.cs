@@ -63,6 +63,12 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window
         }
 
         #region Others 
+
+        /// <summary>
+        /// not efficient if sliding window greater 
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public int CountGoodSubstrings(string s)
         {
             if (s.Length < 3)

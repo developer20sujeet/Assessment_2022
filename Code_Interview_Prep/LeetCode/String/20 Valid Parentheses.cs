@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-namespace LeetCode
+
+namespace LeetCode.String
 {
     class _20_Valid_Parentheses
     {
@@ -27,15 +28,15 @@ namespace LeetCode
                         break;
                     case ')':
                         // if the stack has elements, pop the top; if matches the closing continue to next char; if doesn't match, it's not - the parenthesis are not matching
-                        isValid = (buffer.Count > 0 && buffer.Pop() == '(');
+                        isValid = buffer.Count > 0 && buffer.Pop() == '(';
                         break;
                     case '}':
                         // if the stack has elements, pop the top; if matches the closing continue to next char; if doesn't match, it's not - the parenthesis are not matching
-                        isValid = (buffer.Count > 0 && buffer.Pop() == '{');
+                        isValid = buffer.Count > 0 && buffer.Pop() == '{';
                         break;
                     case ']':
                         // if the stack has elements, pop the top; if matches the closing continue to next char; if doesn't match, it's not - the parenthesis are not matching
-                        isValid = (buffer.Count > 0 && buffer.Pop() == '[');
+                        isValid = buffer.Count > 0 && buffer.Pop() == '[';
                         break;
                     default:
                         break;

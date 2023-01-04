@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Assessment.LeetCode
+namespace LeetCode.Array
 {
     public class Two_Sum
     {
@@ -16,7 +16,7 @@ namespace Assessment.LeetCode
                 {
                     if (nums[i] + nums[j] == target)
                     {
-                        return new int [] { i, j };
+                        return new int[] { i, j };
                     }
                 }
             }
