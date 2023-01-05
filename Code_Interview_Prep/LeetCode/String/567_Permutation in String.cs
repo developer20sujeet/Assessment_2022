@@ -9,6 +9,8 @@ namespace LeetCode.String
     // Need to understand 
     public class Permutation_in_String
     {
+        //Input: s1 = "ab", s2 = "eidbaooo"
+        //Output: true
         public static bool CheckInclusion(string s1, string s2)
         {
             if (s1.Length > s2.Length)

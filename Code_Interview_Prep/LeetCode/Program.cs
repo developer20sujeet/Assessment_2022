@@ -14,7 +14,7 @@ namespace LeetCode
 
             int[] arr1 = { 3, 2 };
 
-           bool a = new _567_Permutation_in_String().CheckInclusion("ab", "eidboaoo");
+           int a = new _1100_Find_K_Length_Substrings_With_No_Repeated_Characters().numKLenSubstrNoRepeats("havefunonleetcode", 5);
 
 
 
