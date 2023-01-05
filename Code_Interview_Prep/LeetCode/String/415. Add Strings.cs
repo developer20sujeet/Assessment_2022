@@ -25,7 +25,7 @@ namespace LeetCode.String
                 num1 = num1.PadLeft(num2.Length, '0');
             }
 
-            String result = ""; int carry = 0;
+            string result = ""; int carry = 0;
 
             for (int i = num1.Length - 1; i >= 0; i--)
             {
@@ -58,13 +58,13 @@ namespace LeetCode.String
             char[] num22 = num2.ToCharArray();
 
             // reversed because it can simply start adding from 0 postion - that is last digit 
-            Array.Reverse(num11);
-            Array.Reverse(num22);
+            //Array.Reverse(num11);
+            //Array.Reverse(num22);
 
             num1 = string.Join("", num11); ;
             num2 = string.Join("", num22); ;
 
-            String result = "";
+            string result = "";
             int carry = 0;
             for (int i = 0; i < num1.Length || i < num2.Length; i++)
             {

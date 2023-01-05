@@ -23,13 +23,16 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.
 
             int windowStart = 0;
 
+            // result to return;
+            List<int> result = new List<int>();
 
+            // if a string in which we need to find anagram is less then it is not possible 
             if (s.Length < p.Length)
             {
                 return new List<int>();
             }
 
-
+            // keep all character and its count in dictionary 
             foreach (char c in p)
             {
                 if (!pMap.ContainsKey(c))
@@ -42,7 +45,7 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.
                 }
             }            
 
-            List<int> result = new List<int>();
+           
 
             for (int i = 0; i < s.Length; i++)
             {
@@ -55,7 +58,7 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.
                     sMap[s[i]]++;
                 }
 
-                // Main
+                // sliding window - window where we need to check condition and do operation and slide forward while removing backword 
                 if (i >= k - 1)
                 {
                     // As soon as i hits p.Lenght - 1, do the comparison, and remove from head of the window (left-end).
@@ -90,9 +93,9 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.
             }
 
             // For every pDict.Key, ensure there is a match with sDict.Key.
-            foreach (var item in pDict)
+            foreach (var pitem in pDict)
             {
-                if (!sDict.ContainsKey(item.Key) || item.Value != sDict[item.Key])
+                if (!sDict.ContainsKey(pitem.Key) || pitem.Value != sDict[pitem.Key])
                 {
                     return false;
                 }

@@ -14,7 +14,7 @@ namespace LeetCode
 
             int[] arr1 = { 3, 2 };
 
-            IList<int> a = _438_Find_All_Anagrams_in_a_String.FindAnagrams("cbaebabacd", "abc");
+           bool a = new _567_Permutation_in_String().CheckInclusion("ab", "eidboaoo");
 
 
 
