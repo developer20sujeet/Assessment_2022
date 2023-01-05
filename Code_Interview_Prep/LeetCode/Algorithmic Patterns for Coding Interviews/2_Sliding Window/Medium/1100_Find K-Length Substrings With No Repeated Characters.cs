@@ -33,6 +33,8 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.
 
                 if(windowEnd >= k-1)
                 {
+                    // tips and tricks - if we checked three element and if all are unique then count will be 3
+                    // if there is not unique then count will be less than 3 .
                     if (dict.Count == k)
                         counter++;
 
