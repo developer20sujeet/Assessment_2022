@@ -10,8 +10,7 @@ namespace LeetCode
     /// </summary>
     public class Maximum_Average_Subarray_I
     {
-
-
+        
         public static double FindMaxAverage_Educative(int[] nums , int k)
         {
             // Store running window sum
@@ -166,5 +165,9 @@ namespace LeetCode
         } 
         #endregion
 
+    
+    
     }
 }
+
+

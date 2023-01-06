@@ -2,25 +2,34 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window
+namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.Template.Fixed_Sliding_Window
 {
-    public class Substrings_Size_Three_with_Distinct_Characters
+    internal class String_SlidingWindowTemplate
     {
+        // Sliding Window Template - String 
         public static int countGoodSubstrings_slidingWindow_AlgoLabIo(string s)
         {
+            // any constraint 
             var k = 3;
             if (s.Length < k)
             {
                 return 0;
             }
 
-            var count = 0;
+            // keep track of result based on condition of requirement 
+            int count = 0;
+
+            // Hasmap to store occurance of each character of string 
+            // tricks - this hasmap count will determine many condition of requiremtn - example line 45 of code 
             Dictionary<char, int> freq = new Dictionary<char, int>();
 
+            // help to slid 
             var windowStart = 0;
 
+            // Outer loop
             for (int windowEnd = 0; windowEnd < s.Length; windowEnd++)
             {
+                // store occurance of each character of string 
                 if (!freq.ContainsKey(s[windowEnd]))
                 {
                     freq[s[windowEnd]] = 1;
@@ -62,84 +71,5 @@ namespace LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window
             }
             return count;
         }
-
-        #region Others 
-
-        /// <summary>
-        /// not efficient if sliding window greater 
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
-        public int CountGoodSubstrings(string s)
-        {
-            if (s.Length < 3)
-                return 0;
-
-            int cnt = 0;
-
-            for (int i = 0; i < s.Length - 2; i++)
-            {
-                if (s[i] == s[i + 1] || s[i] == s[i + 2] || s[i + 1] == s[i + 2])
-                    continue;
-
-                cnt++;
-            }
-
-            return cnt;
-        } 
-        #endregion
-
-        public static int countGoodSubstrings_slidingWindow_Practice(string s)
-        {
-            int k = 3; // window
-            int count = 0;
-            Dictionary<char, int> dic= new Dictionary<char, int> ();
-
-            // Sliding window template 
-
-            int windowStart = 0;
-            for (int windowEnd = 0; windowEnd < s.Length; windowEnd++)
-            {
-                if (!dic.ContainsKey(s[windowEnd]))
-                {
-                    dic[s[windowEnd]] = 1;
-
-                }
-                else
-                {
-                    dic[s[windowEnd]]++;
-                }
-
-
-                if(windowEnd >= k-1)
-                {
-                    if(dic.Count==k)
-                    {
-                        count++;
-                    }
-
-                    if (dic[s[windowStart]]==1)
-                    {
-                        dic.Remove(s[windowStart]);
-                    }
-                    else
-                    {
-                        dic[s[windowStart]]--;
-                    }
-
-                    // Remove backward element by 1 
-                    // slide forward by 1
-                    windowStart++;
-
-                }
-
-               
-
-            }
-
-            return count;
-
-        }
-
     }
 }
