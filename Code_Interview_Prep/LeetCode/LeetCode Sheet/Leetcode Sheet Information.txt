@@ -1,6 +1,8 @@
 ﻿
 1.https://www.techinterviewhandbook.org/grind75
 
+1. https://www.algoexpert.io/questions -170
+
 2. https://neetcode.io/practice  - 150 
 
 3. https://leetcode.com/problem-list/leetcode-curated-algo-170/ - 170 
