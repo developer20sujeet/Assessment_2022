@@ -25,3 +25,12 @@ https://www.codingninjas.com/codestudio/problem-lists
 
 
 11. https://workat.tech/problem-solving/lists/six-month-dsa-practice-sheet/practice
+
+
+12.https://dvpr.gitbook.io/coding-interview-patterns/1.-pattern-sliding-window/1.1-maximum-sum-subarray-of-size-k-easy
+
+
+13. https://mega.nz/folder/HCoUXaQK#Gz9KcyWxWIoxf4YjQVit4Q  - algo expert 150
+
+=====================
+https://lixinchengdu.github.io/algorithmbook/leetcode/two-sum.html

@@ -1,0 +1,14 @@
+﻿
+1.https://dvpr.gitbook.io/coding-interview-patterns/1.-pattern-sliding-window/1.1-maximum-sum-subarray-of-size-k-easy
+
+2. https://algo.monster/problems/stats
+
+3. https://algodaily.com/dashboard
+
+
+4. https://interviewnoodle.com/coding/home
+
+5. https://www.youtube.com/watch?v=wrNEKxlDWlw
+
+
+6. https://mega.nz/folder/HCoUXaQK#Gz9KcyWxWIoxf4YjQVit4Q - algo expert 

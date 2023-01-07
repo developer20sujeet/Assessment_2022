@@ -34,7 +34,11 @@ namespace LeetCode
                 if (windowEnd >=k-1)
                 {
                     // Need max so that we can store in variable to find max
-                    MaxSum = Math.Max(MaxSum, WindowSum/(double)k);
+                    // WindowSum/(double)k - this operation increase time complexity 
+                        //MaxSum = Math.Max(MaxSum, WindowSum/(double)k);
+
+                    // just take max and find average at last 
+                    MaxSum = Math.Max(MaxSum, WindowSum);
 
                     // This is main feature of sliding window - in total sum we will slide by 1 forward and add and remove last 1 element value 
                     // Slide one forward - remove one from backword
@@ -48,7 +52,8 @@ namespace LeetCode
 
             }
 
-            return MaxSum;
+            // dividing by k at last so that decrease time complexity 
+            return MaxSum/k;
 
         }
 

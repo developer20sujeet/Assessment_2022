@@ -21,15 +21,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigO_Notation", "BigO_Notat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data_Structure", "Data_Structure", "{95DA5FA8-60B6-4CA4-A686-62BF3EE7B68A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_String_Simple_Operation", "1_String_Simple_Operation\1_String_Simple_Operation.csproj", "{CAE5653B-9753-45D1-B67C-3BF998001A21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1_String_Simple_Operation", "1_String_Simple_Operation\1_String_Simple_Operation.csproj", "{CAE5653B-9753-45D1-B67C-3BF998001A21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_DataDictionary", "DataDictionary\2_DataDictionary.csproj", "{2C4E973A-DB80-49A6-A433-AAB2BD143D2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_DataDictionary", "DataDictionary\2_DataDictionary.csproj", "{2C4E973A-DB80-49A6-A433-AAB2BD143D2F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General_Programming", "General_Programming", "{5A4DF675-432A-4BBE-94BC-73FADBCEA6B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General_Programming", "General_Programming\General_Programming.csproj", "{D861F0DB-275B-4A89-B88B-C30A74631083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "General_Programming", "General_Programming\General_Programming.csproj", "{D861F0DB-275B-4A89-B88B-C30A74631083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\LinkedList.csproj", "{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leetcode_All_Practice", "Leetcode_All_Practice\Leetcode_All_Practice.csproj", "{2608ED05-7E61-4AB6-A5D9-80C99CCB7F52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95A1D20B-07FD-4395-A3A1-399BBFEC0D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2608ED05-7E61-4AB6-A5D9-80C99CCB7F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2608ED05-7E61-4AB6-A5D9-80C99CCB7F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2608ED05-7E61-4AB6-A5D9-80C99CCB7F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2608ED05-7E61-4AB6-A5D9-80C99CCB7F52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
