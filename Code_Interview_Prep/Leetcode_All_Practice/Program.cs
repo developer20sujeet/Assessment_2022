@@ -1,10 +1,8 @@
 ﻿
 
 using Leetcode_All_Practice.SlidingWindow;
+using Leetcode_All_Practice.SlidingWindow.Easy;
 
-
-int[] ar = { 1, 3, 2, 6, -1, 4, 1, 8, 2 };
-
-double[] a = new _1876_Substrings_of_Size_Three_with_Distinct_Characters().CountGoodSubstrings("xyzzaz");
-
-string s = "";
+int[] num = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+double a = new _643_Maximum_Average_Subarray_I().FindMaxAverage(num, 5);
+string d = "";

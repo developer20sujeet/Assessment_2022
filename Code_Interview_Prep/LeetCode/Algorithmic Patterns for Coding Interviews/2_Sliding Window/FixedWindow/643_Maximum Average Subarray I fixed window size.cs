@@ -7,10 +7,17 @@ namespace LeetCode
 {
     /// <summary>
     /// https://leetcode.com/problems/maximum-average-subarray-i/
+    /// You can use 
+    /// Two pointer
+    /// sliding window
+    /// dynamic programming (DP)
+    /// divide-and-conquer algorithm
+    /// brute force algorithm
+    /// sorting algorithm
     /// </summary>
     public class Maximum_Average_Subarray_I
     {
-        
+        // Slding window approach is efficient here 
         public static double FindMaxAverage_Educative(int[] nums , int k)
         {
             // Store running window sum
@@ -98,6 +105,7 @@ namespace LeetCode
 
         }
 
+
         #region Other way 
         /// <summary>
         /// Runtime: 303 ms, faster than 75.88% of C# online submissions for Maximum Average Subarray I.
@@ -170,7 +178,7 @@ namespace LeetCode
         } 
         #endregion
 
-    
+        
     
     }
 }

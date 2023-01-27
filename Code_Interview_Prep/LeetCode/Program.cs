@@ -1,6 +1,8 @@
 ﻿
 using LeetCode;
 using LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window;
+using LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.DynamicWindow.Easy;
+using LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.DynamicWindow.Hard;
 using LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.DynamicWindow.Medium;
 using LeetCode.Algorithmic_Patterns_for_Coding_Interviews._2_Sliding_Window.Medium;
 using System.Collections.Generic;
@@ -13,11 +15,12 @@ namespace LeetCode
         static void Main(string[] args)
         {
 
-            int[] arr1 = { 2, 3, 1, 2, 4, 3 };
+            int[] arr1 = { 1, 0, 1, 1, 0 };
 
-           int a = new _209_Minimum_Size_Subarray_Sum().MinSubArrayLen(7, arr1);
+            //string a = new _76_Minimum_Window_Substring_cs().MinWindow("ADOBECODEBANC", "ABC");
+            //string a = new _76_Minimum_Window_Substring_cs().MinWindow("AAOBEBCODEBANC", "ABBC");
 
-
+            int a = new _487_Max_Consecutive_Ones_II().solution(arr1);
 
         }
     }
