@@ -1,0 +1,150 @@
+Prayagraj (previously known as Allahabad)
+Sam Higginbottom Institute of Agriculture, Technology & Sciences(shiats)
+Rewa Road, Naini ,near to Yamuna, Prayagraj (previously known as Allahabad), Uttar Pradesh – 211 007
+Computer Application
+
+=======
+{"education-data-list":[{"state":{"current_stage":"education-data-v1","current_step":"education-step-v1","current_step_index":0,"current_sub_step":"qualification","current_sub_step_index":6,"current_iteration":0,"current_status":"COMPLETED","stage_status":"PENDING"},"type":"postGraduate","country":"IN","country_name":"INDIA","state_code":"UP","state_name":"Uttar Pradesh","city":"Prayagraj (previously known as Allahabad)","name":"Sam Higginbottom Institute of Agriculture, Technology and Sciences(shiats)","address":"Rewa Road, Naini ,near to Yamuna, Prayagraj (previously known as Allahabad), Uttar Pradesh – 211 007","qualification":"Computer Application","degree-type":"masters","start-date":"2010-08-01","end-date":"2013-06-01","degree-date":"2013-06-01","degree_confirm":"Yes","current_study_confirm":"","current_study":false,"no_current_education":false,"service_action":"PERSIST","pa_sync_id":null}]}
+======
+
+824220
+
+6201 Windhaven Pkwy , apt 3123
+
+
+Village - Ghoraghat (At Bazar in Kurmi Tola) , Post office  - Ghoraghat , District-GAYA 
+
+Landmark - Dobhi >> Kotwara >> Dhirja Pool , Mobile No- +91 97489 64678
+
+setp 30th- 2020 
+
+
+NAMOAH@ZULKIEPARTNERS.COM 
+ZULKIE PARTNERS LLC 
+(131) 283-1213 
+NANA  OTUTUA-AMOAH 
+
+namoah@zulkiepartners.com via ww8.welcomeclient.com 
+to:	cloudme50@gmail.com
+cc:	Mariam.Mikadze@bgrs.com,
+mneal@zulkiepartners.com,
+namoah@zulkiepartners.com
+Your order MFST0000420430 placed on 09/04/2023
+Nana A. Otutua-Amoah
+
+====================
+I-200-22132-165930
+https://flag.dol.gov/case-status-search
+
+----------------------------------------------------------------------------
+Please ensure that your chosen web browser is up to date. Edge is compatible with the following versions:
+- Safari (version 7 and above)
+- Mozilla Firefox (version 32 and above)
+- Google Chrome (version 46 and above)
+----------------------------------------------------------------------------
+Enter the following URL into your browser: https://ww8.welcomeclient.com
+
+User Name: 4kumsujw6u
+Password: qEHieL%2JX/Budha@1987bu
+Case Number: 22596
+
+823001 gaya pin code 
+============================
+Prity 
+User Name: tn4ttlivz
+Password: Qb5$uZDx/Budha@1987bu
+Case Number: 22604
+
+User Name: tn4ttlivz
+I have changed the password
+=======================================
+Address where I will be working. 
+Address - 1400 13TH STREET 
+City- EAST MOLINE 
+State - IL 
+Postal Code - 61244
+
+Please let me know if you need any more information or can can call me directly at 726-214-4197 if needed
+
+[1,12,-5,-6,50,3]
+
+2   =1,12,-5,-6
+51	=12,-5,-6,50
+42	=-5,-6,50,3
+
+
+
+1169 MUNNI MASJID , GEWAL BIGHA , 
+POST-OFFICE - SAMIR TAKYA 
+POLICE STATION - RAMPUR 
+DISTRICT - GAYA 
+STATE BIHAR 
+COUNTRY INDIA 
+
+===========
+ 1.Design, Develop, Code,modify,test, Debug, Integrate, troubleshoot,Bug Fixing and Code Review and maintain complex project 
+ 2.Actively participat in team projects and followed Agile Methodology for overall project development and deliverables
+ 3.Implement and configure to use and access AWS service securely and only by authenticated and authorized user
+ 4.End to End Restful Web API Microservice development for Merchant Management, Settlement and Transaction processing Module
+ 5.Event Driven Architecture design and implementation for microservice communication
+ 5 Implement Domain Driven Design Architecture with clean Architecture 
+ 6.Design , develop and implement new software component to ensure system wide efficiency , reliability and compatibility.
+ 6.AWS cloud Lambda Development 
+ 7.Microservice communication development using AWS technology 
+ 8.AWS cloud Architecture design and implementation 
+ 9.Develop WEB REST API and Endpoint for all microservice 
+ 10.Integrat WEB REST API with AWS cloud RDS Database
+ 11.Integrat WEB REST API sensitive credential with AWS secret Manager
+ 12.Develop resilience tool to re-process failed transaction event 
+ 13.Integrating Microservice with third party Data wire and First Data for smooth processing of Credit and Debit Card transaction and payment 
+ 13.Database DB development and optimization.
+ 14.Data integration from back-end service/database to Web Portal
+ 15.Implement SWAGGER API Documentation in WEB API
+ 16.Develop a reusable component to post alert to AP Portal based on Daily and monthly transaction limit
+ 17.Develop a Search functionality which help end user to search various type of report based on various parameter
+ 18.Design and develop Data Dictionary for DB 
+ 19.Develop Database object for all module and its DB Object relationship
+ 20.Implement Microsoft Logging framework in all module for better logging across project.
+ 20.Implement Global exception handler to handle unwanted error and exception across project.
+ 21.Design/Development/Coding software from scratch 
+ 22.Building application framework.
+ 22.Data Dictionary Model design and establish relation
+ 23.Debugging and bug fixing 
+ 24 Data integration from back-end service/database to application
+ 24.Performance Optimization to speed up the Software Application Response  
+ 25.Develop WEB API endpoint to be consumed by calling system
+ 26.Analyze user needs and develop software solutions
+ 27.Design software or customize software for client use with the aim of optimizing operational efficiency
+ 27.Store, retrieve, and manipulate data for software application
+ 28.Upgrade existing applications and/or integrate applications with new/existing applications and databases to improve performance and optimize operational efficiency.
+ 29.Create and use reusable technology components
+ 30.Perform unit testing per test plans and test cases and document results of validation effort
+ 30.Resolve application-related issues experienced by end-users
+ 31.Work closely with analysts, designers and staff to produce detailed specifications and writing the program codes.
+ 32.Prepare and executed unit test cases.
+ 32.Performance optimization.
+ 33.Code framework Upgradation.
+ 34.Co-ordination with other stakeholders regarding the interfacing.
+ 33.Develop and manage applications, upgrade existing applications and/or integrate application with any new/existing applications and databases.
+ 34.To maintaining, expanding, and scaling software application
+ 35.Reverse engineer existing processes to propose a better solution for existing processes
+
+
+================
+Question 
+
+Current employed
+
+
+Sam Higginbottom Institute of Agriculture, Technology & Sciences (SHIATS)
+
+
+
+
+
+
+
+
+
+
+	

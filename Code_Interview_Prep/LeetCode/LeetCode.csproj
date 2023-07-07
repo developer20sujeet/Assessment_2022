@@ -9,9 +9,11 @@
     <Compile Remove="9_Palindrome Number.cs" />
     <Compile Remove="Algorithmic Patterns for Coding Interviews\1_Two_Ponter\167_Two_Sum_II.cs" />
     <Compile Remove="Algorithmic Patterns for Coding Interviews\2_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
+    <Compile Remove="Array\217_ContainsDuplicate_217.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Array\217_ContainsDuplicate_217.cs" />
     <None Include="Number\9_Palindrome Number.cs" />
     <None Include="Algorithmic Patterns for Coding Interviews\1_Two_Ponter\167_Two_Sum_II.cs" />
     <None Include="Algorithmic Patterns for Coding Interviews\2_Sliding Window\904. Fruit Into Baskets -Dynamic Window Size.cs" />
@@ -19,7 +21,7 @@
 
   <ItemGroup>
     <Folder Include="Algorithmic Patterns for Coding Interviews\3_Binary_Search\" />
-    <Folder Include="LeetCode_CompanyWise\" />
+    <Folder Include="ReferenceDoc\LeetCode_CompanyWise\" />
   </ItemGroup>
 
 </Project>
