@@ -1,0 +1,15 @@
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\bin\Debug\net7.0\Algorithmic_Patterns.exe
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\bin\Debug\net7.0\Algorithmic_Patterns.deps.json
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\bin\Debug\net7.0\Algorithmic_Patterns.runtimeconfig.json
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\bin\Debug\net7.0\Algorithmic_Patterns.dll
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\bin\Debug\net7.0\Algorithmic_Patterns.pdb
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\Algorithmic_Patterns.csproj.AssemblyReference.cache
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\Algorithmic_Patterns.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\Algorithmic_Patterns.AssemblyInfoInputs.cache
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\Algorithmic_Patterns.AssemblyInfo.cs
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\Algorithmic_Patterns.csproj.CoreCompileInputs.cache
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\Algorithmic_Patterns.dll
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\refint\Algorithmic_Patterns.dll
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\Algorithmic_Patterns.pdb
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\Algorithmic_Patterns.genruntimeconfig.cache
+E:\Code_Interview_Prep_V3\Code_Interview_Prep\Algorithmic Patterns\Algorithmic_Patterns\obj\Debug\net7.0\ref\Algorithmic_Patterns.dll
