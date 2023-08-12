@@ -1,64 +1,75 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Formats.Asn1;
+using System.Runtime.CompilerServices;
 
-class Program
+public class Program
 {
 
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
 
-        string sentence = "aabdsda";
+       int [] a= TwoSum(new int[] { 3, 2, 4 }, 6);
 
-        HashSet<char> seen = new HashSet<char>();
-        Dictionary<char, int> counts = new Dictionary<char, int>(); 
-
-        // Convert sentence to lowercase and iterate over each character
-        foreach (char currChar in sentence.ToLower().ToCharArray())
-        {
-            if (char.IsLetter(currChar))
-            {
-                // Add the character to set
-                seen.Add(currChar);
-                counts.Add(currChar, 1);
-            }
-        }
-
-        // Return true if set size is 26 (total number of alphabets)
-        //return seen.Count == 26;
 
 
     }
 
-    /// <summary>
-    /// two pointer
-    /// </summary>
-    /// <param name="nums"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
-    public int[] TwoSum(int[] nums, int target)
+    public static int[] TwoSum2(int[] nums, int target)
     {
-        int pointer_one= 0, pointer_two=nums.Length-1;
 
-        while (pointer_one < pointer_two)
+        // Sort the Array 
+
+        List<KeyValuePair<int, int>> kvp = new List<KeyValuePair<int, int>>();
+
+        for (int i = 0; i < nums.Length-1; i++)
         {
-            long sum = nums[pointer_one] + nums[pointer_two];
 
-            if (sum == target)
-            {
-                int[] arr = new int[2];
-                arr[0] = pointer_one;
-                arr[1] = pointer_two;
-                return arr;
-            }
-
-            if (sum < target )
-                pointer_one++;
-            else
-                pointer_two--;
+            kvp.Add(new KeyValuePair<int, int> { nums[i], i });
 
         }
 
-        return new int[0];
 
+
+
+    }
+
+        public static int[] TwoSum(int[] nums, int target)
+    {
+
+        (int number, int index)[] arr = new (int number, int index)[nums.Length];
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+
+            arr[i] = (nums[i], i);
+
+        }
+
+        Array.Sort(arr, (a, b) => a.number.CompareTo(b.number));
+
+        // start two pointer now   now 
+
+
+        int leftPointer = 0, rightPointer = nums.Length - 1;
+
+        while (leftPointer < rightPointer)
+        {
+
+            long sum = arr[leftPointer].number + arr[rightPointer].number;
+
+            if (sum == target)
+            {
+
+                return new int[] { arr[leftPointer].index, arr[rightPointer].index };
+            }
+            else if (sum < target)
+            { leftPointer++; }
+            else
+            { rightPointer--; }
+
+
+        }
+
+        return new int[] { -1, -1 }; ;
 
     }
 }
