@@ -23,10 +23,11 @@ public class Program
         for (int i = 0; i < nums.Length-1; i++)
         {
 
-            kvp.Add(new KeyValuePair<int, int> { nums[i], i });
+            kvp.Add(new KeyValuePair<int, int> ( nums[i], i ));
 
         }
 
+        Array.Sort(nums,)
 
 
 
