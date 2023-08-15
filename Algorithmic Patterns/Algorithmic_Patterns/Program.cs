@@ -1,6 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Algorithmic_Patterns.TwoPointer.Easy;
+﻿using Algorithmic_Patterns.TwoPointer.Easy;
 
-Console.WriteLine("Hello, World!");
+int a = 0;
 
-new LT_1_TwoSum().TwoSum(new int[] { 3, 2, 4 },6);
+new _26_Remove_Duplicates_from_Sorted_Array().RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 });
