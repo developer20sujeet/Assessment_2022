@@ -7,60 +7,100 @@ using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace SingleLinkedList
 {
-    public class SinglyListNode
+    /*
+    
+      Single LinkedList Node Implementation has has two class
+      1. One class to just represent node - data , next , constrcutor
+      2. Class two to implement CRUD and anything 
+
+     */
+
+
+    public class Node
     {
         public int data;
-        public SinglyListNode next;
-        public SinglyListNode(int data)
+        public Node next;
+        public Node(int data)
         {
             this.data = data;
             this.next = null;
         }
     }
+
+
     public partial class SingleLinkedLists
     {
-        public SinglyListNode? head = null;
-        public SinglyListNode? tail = null;
+        public Node? head = null;
+        public Node? tail = null;
+
+
         int linkedListSize = 0;
+
+
         // Adds a head at the beginning of the list
         public void AddFirst(int data)
         {
-            SinglyListNode newSinglyListNode = new SinglyListNode(data);
+            /*
+             Read Me: 
+              1. Always Visualize to understand code 
+              2. Here you are adding node jsut before existing head 
+            */
+
+            // Single unit of Node implementation 
+            Node node = new Node(data);
+
+            // If there is not node at all - then head and tail will point to same 
             if (head == null)
             {
-                head = newSinglyListNode;
-                tail = newSinglyListNode;
+                head = node;
+                tail = node;
                 return;
             }
-            newSinglyListNode.next = head;
-            head = newSinglyListNode;
+
+            //if there is already existing head node then - Visualize you are trying to add one node before existing head node 
+            node.next = head;
+
+            // Here you are assing node to head so that you had track of head always 
+            head = node;
+
+            // to capture size
             linkedListSize++;
         }
+
+
         // Adds a head at the end of the list
+        // Same as AddFirst()
         public void AddLast(int data)
         {
-            SinglyListNode newSinglyListNode = new SinglyListNode(data);
+            Node node = new Node(data);
+
             if (head == null)
             {
-                head = newSinglyListNode;
-                tail = newSinglyListNode;
+                head = node;
+                tail = node;
                 return;
             }
-            tail.next = newSinglyListNode;
-            tail = newSinglyListNode;
+
+            tail.next = node;
+            tail = node; // why why ?? because you want to tack tail and head all the time and you must be knowing all the time head and tail 
             linkedListSize++;
         }
+
+        // add node at given index- linkedlist in zero based
         public void AddMiddle(int index, int data)
         {
-            SinglyListNode newSinglyListNode = new SinglyListNode(data);
-            // in case linked list is null
+            Node node = new Node(data);
+
+            // edge case - in case linked list is null
             if (head == null)
             {
                 AddFirst(data);
                 return;
             }
-            // start from begining 
-            SinglyListNode tempNode = head;
+
+            // start from beginging 
+            Node tempNode = head;
+
             int _index = 0;
             // why index-1 = LinkedList is zero index based , 
             while (_index < index - 1) // index 2 // -1 because linked list is 0 index based
@@ -68,8 +108,15 @@ namespace SingleLinkedList
                 tempNode = head.next;
                 _index++;
             }
-            newSinglyListNode.next = tempNode.next;
-            tempNode.next = newSinglyListNode;
+
+            // you need two operation like previous >> new node and New node >> next node 
+
+            // so new node point to next node 
+            node.next = tempNode.next;
+
+            // new node pointing to previous node 
+            tempNode.next = node;
+
             linkedListSize++;
         }
         public int RemoveFirst()
@@ -110,7 +157,7 @@ namespace SingleLinkedList
                 linkedListSize = 0;
                 return val1;
             }
-            SinglyListNode Node = head;
+            Node Node = head;
             // Why -2 = Normally if we have to reach till last element of array/linked list we do size -1 but we have to reach second last then -2
             for (int i = 0; i < linkedListSize - 2; i++)
             {
@@ -125,7 +172,7 @@ namespace SingleLinkedList
         public int IterativeSearch(int data) // o(n) 
         {
             int returnVal = 0;
-            SinglyListNode node = head;
+            Node node = head;
             while (node != null)
             {
                 if (node.data == data)
@@ -141,7 +188,7 @@ namespace SingleLinkedList
         {
             return RcurHelper(head, data);
         }
-        public int RcurHelper(SinglyListNode head, int data)
+        public int RcurHelper(Node head, int data)
         {
             //If the head node is null, the function returns -1, indicating that the value of data is not found in the linked list.
             if (head == null)
@@ -175,7 +222,7 @@ namespace SingleLinkedList
                 Console.WriteLine("LL is null");
                 return;
             }
-            SinglyListNode temp = singleLinkedLists.head;
+            Node temp = singleLinkedLists.head;
             while (temp != null)
             {
                 Console.Write(temp.data + "-->");

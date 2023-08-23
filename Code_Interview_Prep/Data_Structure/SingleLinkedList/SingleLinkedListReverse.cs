@@ -51,16 +51,16 @@ namespace SingleLinkedList
             //4 -> 3 -> 2 -> 1 -> null
         /// </summary>
         /// <returns></returns>
-        public SinglyListNode IterativeReverseSinglyLinkedLIst(SinglyListNode head)
+        public Node IterativeReverseSinglyLinkedLIst(Node head)
         {
             if (head == null) return head;
 
             //Three pointers are initialized: previous, next, and current.
-            SinglyListNode previous = null;           
-            SinglyListNode next = null;
+            Node previous = null;           
+            Node next = null;
 
             //The current pointer is set to the head of the linked list.
-            SinglyListNode current = head;
+            Node current = head;
 
 
             while (current != null)

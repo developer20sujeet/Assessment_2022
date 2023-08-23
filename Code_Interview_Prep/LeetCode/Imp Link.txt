@@ -32,6 +32,8 @@
     ===================
     https://dvpr.gitbook.io/coding-interview-patterns/1.-pattern-sliding-window/1.1-maximum-sum-subarray-of-size-k-easy
 
+    https://workat.tech/practice
+
 
 What I learned 
 ====================
