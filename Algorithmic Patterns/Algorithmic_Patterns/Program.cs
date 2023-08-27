@@ -2,4 +2,4 @@
 
 int a = 0;
 
-new _26_Remove_Duplicates_from_Sorted_Array().RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 });
+new _844_Backspace_String_Compare().BackspaceCompareV2("abc##", "ab");
