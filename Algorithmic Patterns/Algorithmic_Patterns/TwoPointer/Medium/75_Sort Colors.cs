@@ -15,7 +15,7 @@ namespace Algorithmic_Patterns.TwoPointer.Medium
         /// Space complexity: O(1)
         /// Algorithm used: Dutch National Flag Problem -Dutch National Flag consists of three horizontal bands of color: red on the top, white in the middle, and blue at the bottom
         /// Algorithmic coding pattern: Three Pointers
-        /// Data structure used: Array
+        /// Data structure used: Array 
         /// Company name: Commonly asked in various companies
         /// Important Tips and Tricks: Use three pointers to separate 0s, 1s, and 2s.
         /// Lessons Learned: Manipulate pointers carefully to sort the array in one pass.
@@ -26,9 +26,9 @@ namespace Algorithmic_Patterns.TwoPointer.Medium
         /// p2(Pointer for 2s or "Blue") : Starting at the end of the array
         /// 
         /// // RED   | 0 0 0 0 0
-            //----- | ---------
+            //-----  | ---------
             // WHITE | 1 1 1 1 1
-            //----- | ---------
+            //-----  | ---------
             // BLUE  | 2 2 2 2 2
         /// </summary>
         public void SortColors(int[] nums)
