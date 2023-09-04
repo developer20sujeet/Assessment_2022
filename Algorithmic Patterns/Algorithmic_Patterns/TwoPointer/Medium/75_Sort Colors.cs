@@ -26,10 +26,10 @@ namespace Algorithmic_Patterns.TwoPointer.Medium
         /// p2(Pointer for 2s or "Blue") : Starting at the end of the array
         /// 
         /// // RED   | 0 0 0 0 0
-            //-----  | ---------
-            // WHITE | 1 1 1 1 1
-            //-----  | ---------
-            // BLUE  | 2 2 2 2 2
+        //-----  | ---------
+        // WHITE | 1 1 1 1 1
+        //-----  | ---------
+        // BLUE  | 2 2 2 2 2
         /// </summary>
         public void SortColors(int[] nums)
         {
@@ -58,8 +58,14 @@ namespace Algorithmic_Patterns.TwoPointer.Medium
                     p0++; //moved one step to the right to prepare for the next 0 you might find
                     curr++; //Move one step ahead because the element at curr was a 0 and has been swapped and placed correctly
                 }
+                else if (nums[curr] == 1)
+                {
+                    // Move curr pointer
+                    // Reason: If nums[curr] is 1, it's already in the correct position.
+                    curr++;
+                }
                 // Reason: If current element is 2, it needs to go at the end.
-                else if (nums[curr] == 2)
+                else //if (nums[curr] == 2)
                 {
 
                     // Reason: Puts the 2 in its correct position.
@@ -69,14 +75,9 @@ namespace Algorithmic_Patterns.TwoPointer.Medium
                     // Move p2 pointer
                     // Reason: Update p2 for the next iteration.
                     p2--;//it moves one step to the left to prepare for the next 2 you might find
-                    // not need to curr++;--did not increment curr because after swapping with p2, the new element at curr has not yet been evaluated. It could be another 2, a 0, or a 1.
+                         // not need to curr++;--did not increment curr because after swapping with p2, the new element at curr has not yet been evaluated. It could be another 2, a 0, or a 1.
                 }
-                else
-                {
-                    // Move curr pointer
-                    // Reason: If nums[curr] is 1, it's already in the correct position.
-                    curr++;
-                }
+
             }
         }
 
