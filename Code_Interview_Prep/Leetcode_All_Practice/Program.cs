@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Formats.Asn1;
 using System.Globalization;
 using System.Runtime.CompilerServices;
@@ -8,31 +9,36 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        new Program().ThreeSum(new int[] { 0, 0, 0, 0 });
 
-
-        new Program().TwoSum(new int[] { 3, 3 }, 6);
 
 
     }
-    public int[] TwoSum(int[] nums, int target)
+    public int MaxArea(int[] height)
     {
-        Dictionary<int, int> result = new Dictionary<int, int>();
+        int left = 0;
+        int right = height.Length - 1;
 
-        for (int i = 0; i < nums.Length; i++)
+        int maxWater = 0;
+
+        while (left < right)
         {
-            if (result.ContainsKey(target- nums[i]))
-            {
-                return new int[] { i, result[target - nums[i]]};
-            }
+            int width = right - left;
+
+            int minHeight = Math.Min(height[left], height[right]);
+
+            maxWater = Math.Max(maxWater, width * minHeight);
+
+            if (height[left] < height[right])
+                left++;
             else
-                result[nums[i]] = i;
-
-
+                right--;
         }
 
+        return maxWater;
 
-        return null;
 
     }
+
 }
 

@@ -19,17 +19,18 @@ namespace Algorithmic_Patterns.TwoPointer.Medium
         /// Lessons Learned: 
         ///     1. Sorting is a common preparatory step for two-pointer algorithms.
         ///     2. Central Idea: Fix one element and then apply the two-pointer technique for the remaining elements.
+        ///     3. check duplicate for every i , left and right index 
         ///     3. Always consider and include edge cases in your solution.
         /// </summary>
         public IList<IList<int>> ThreeSum(int[] nums)
         {
-            // Step 1: Edge case check and sort the array.
-            // Reason: A sorted array helps us use the two-pointer technique effectively.
+            // Step 1: Edge case check and sort the array.            
             IList<IList<int>> result = new List<IList<int>>();
 
             if (nums == null || nums.Length < 3) 
                 return result;
 
+            // Reason: A sorted array helps us use the two-pointer technique effectively.
             Array.Sort(nums);
 
             // Step 2: Loop through the sorted array and fix the first element for each triplet.
