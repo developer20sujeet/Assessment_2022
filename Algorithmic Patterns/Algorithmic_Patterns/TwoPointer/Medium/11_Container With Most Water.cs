@@ -31,22 +31,31 @@ namespace Algorithmic_Patterns.TwoPointer.Medium
     {
         public int MaxArea(int[] height)
         {
-            int maxDistanceBetweenTwoVerticaline = 0;
-            int minOfTwoVerticalLine = 0;
-            int maxArea = int.MinValue;
+            // max width between two array index 
+            int width = 0;
+
+            // Minimum height between two array value at two index (Left and right)
+            int minHeight = 0;
+
+            int maxWaterArea = int.MinValue;
+
 
             int leftIndex = 0;
             int rightIndex = height.Length - 1;
 
             while (leftIndex < rightIndex)
             {
-                maxDistanceBetweenTwoVerticaline =rightIndex-leftIndex;
+                // max width between two array index 
+                width = rightIndex-leftIndex;
 
-                minOfTwoVerticalLine = Math.Min(height[leftIndex], height[rightIndex]);
+                // Minimum height between two array value at two index (Left and right)
+                minHeight = Math.Min(height[leftIndex], height[rightIndex]);
 
-                maxArea = Math.Max((maxDistanceBetweenTwoVerticaline * minOfTwoVerticalLine), maxArea);
+                // Max water that can hold 
+                maxWaterArea = Math.Max((width * minHeight), maxWaterArea);
 
-                //
+                // idea is to move toward max vertical line - so compare which vertical line is shorter 
+                // which ever is shorter move that pointer 
                 if (height[leftIndex] < height[rightIndex])
                 {
                     leftIndex++;
@@ -55,11 +64,8 @@ namespace Algorithmic_Patterns.TwoPointer.Medium
                 {
                     rightIndex--;
                 }
-
-
             }
-
-            return maxArea;
+            return maxWaterArea;
 
         }
     }
