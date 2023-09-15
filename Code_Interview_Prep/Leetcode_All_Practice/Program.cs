@@ -9,33 +9,56 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        new Program().ThreeSum(new int[] { 0, 0, 0, 0 });
+        new Program().Trap(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
+       // new Program().Trap(new int[] { 4, 2, 0, 3, 2, 5 });
 
 
 
     }
-    public int MaxArea(int[] height)
+    public int Trap(int[] height)
     {
-        int left = 0;
-        int right = height.Length - 1;
+        // we need left max and right max of very index 
 
-        int maxWater = 0;
+        int leftMax = 0;
 
-        while (left < right)
+        int rightMax = 0;
+
+        int result = 0;
+
+        for (int i = 0; i < height.Length-1; i++)
         {
-            int width = right - left;
+             leftMax = 0;
 
-            int minHeight = Math.Min(height[left], height[right]);
+             rightMax = 0;
 
-            maxWater = Math.Max(maxWater, width * minHeight);
+            for (int j = 0; j < i; j++)
+            {
 
-            if (height[left] < height[right])
-                left++;
-            else
-                right--;
+                leftMax = Math.Max(leftMax, height[j]);
+            }
+
+
+            for (int j = i+1; j < height.Length; j++)
+            {
+
+                rightMax = Math.Max(rightMax, height[j]);
+
+                if (rightMax >= leftMax && height[i] !>= leftMax)
+                    break;
+            }
+
+
+            if (leftMax != 0)
+            {
+                result += Math.Min(leftMax, rightMax) - height[i];
+            }
+
+
+
+
+
         }
-
-        return maxWater;
+        return result;
 
 
     }

@@ -83,60 +83,79 @@ namespace Algorithmic_Patterns.TwoPointer.Hard
             // Step 5: Return the total trapped water
             // Reason: Result of the problem
             return trappedWater;
-        } 
+        }
         #endregion
 
 
         #region Brute Force time O(n^2) space O(1)
+
         /// <summary>
-        /// Method to find trapped water using brute-force method
         /// Time Complexity: O(n^2)
         /// Space Complexity: O(1)
         /// Algorithm Used: Brute-force
+        /// Algorithmic Coding Pattern: Nested Loops
         /// Data Structure Used: Array
+        /// Company Name: Commonly asked in Amazon, Google, and Facebook
+        /// Important Tips and Tricks: 
+        ///     1. Use nested loops to find leftMax and rightMax for each index.
+        ///     2. Minimize the height difference to find the trapped water.
+        /// Lessons Learned:
+        ///     1. Understanding the problem is crucial; a well-defined problem leads to an easier solution.
+        ///     2. Pay close attention to loop conditions to avoid off-by-one errors.
         /// </summary>
-        /// <param name="height">Array containing the heights</param>
-        /// <returns>Amount of trapped rainwater</returns>
-        public static int Trap_BruteForce(int[] height)
+        public int Trap_bruteForce(int[] height)
         {
-            // edge case 
-            if (height.Length <= 2)
-                return 0;
+            // Initialize variables to store the result and temporary maximum heights
+            int result = 0;
+            int leftMax, rightMax;
 
-
-            // Step 1: Initialize the total water trapped to 0
-            int totalWater = 0;
-
-            // Step 2: Loop through each bar
+            // Loop through the array to find trapped water at each index
             for (int i = 0; i < height.Length; i++)
             {
+                // Reset leftMax and rightMax for each index
+                leftMax = 0;
+                rightMax = 0;
 
-                // Step 3: Find the tallest bar on the left of height[i]
-                // j <= i - <=i because we need left max of height[i] 
-                int leftMax = 0;
-                for (int j = 0; j <= i; j++)
+                // Find the maximum height to the left of the current index (excluding the index itself)
+                for (int j = 0; j < i; j++)
                 {
                     leftMax = Math.Max(leftMax, height[j]);
                 }
 
-
-                // Step 4: Find the tallest bar on the right of i
-                // int j = i because we need rigth max of height[i] 
-                int rightMax = 0;
-                for (int j = i; j < height.Length; j++)
+                // Find the maximum height to the right of the current index (excluding the index itself)
+                for (int j = i + 1; j < height.Length; j++)
                 {
                     rightMax = Math.Max(rightMax, height[j]);
                 }
 
-                // Step 5: Find the water that can be stored at i
-                // We take the minimum of leftMax and rightMax for trapping water and subtract the height at the current bar
-                // Why minium - because only minium of bar water can hold upto 
-                totalWater += Math.Min(leftMax, rightMax) - height[i];
+                #region Any of one will work - critical 
+
+                //// Add trapped water when the minimum of leftMax and rightMax is greater than the current height
+                //// if any of the wall ie heigher than current index then trap water 
+                //int minOfMaxes = Math.Min(leftMax, rightMax);
+                //if (minOfMaxes > height[i])
+                //{
+                //    result += minOfMaxes - height[i];
+                //}
+
+
+                ////////////////////// or ///////////////////////////////////////////////////////////
+
+                // Add trapped water only when both sides are greater than the current height
+                // if both side of wall is heigher than current index
+                if (leftMax > height[i] && rightMax > height[i])
+                {
+                    result += Math.Min(leftMax, rightMax) - height[i];
+                } 
+
+                #endregion
+
             }
 
-            // Step 6: Return the total trapped water
-            return totalWater;
+            // Return the total trapped water
+            return result;
         }
+
         #endregion
 
         #region Dyanamic programming t-O(n) s-O(n)
@@ -183,7 +202,7 @@ namespace Algorithmic_Patterns.TwoPointer.Hard
             }
 
             return trappedWater;
-        } 
+        }
         #endregion
 
     }
