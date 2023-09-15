@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Algorithmic_Patterns.TwoPointer.Hard
 {
+    /// <summary>
+    /// Best Link 
+    ///     1. 
+    /// </summary>
     internal class _42_Trapping_Rain_Water
     {
 
@@ -86,7 +90,6 @@ namespace Algorithmic_Patterns.TwoPointer.Hard
         }
         #endregion
 
-
         #region Brute Force time O(n^2) space O(1)
 
         /// <summary>
@@ -132,6 +135,7 @@ namespace Algorithmic_Patterns.TwoPointer.Hard
 
                 //// Add trapped water when the minimum of leftMax and rightMax is greater than the current height
                 //// if any of the wall ie heigher than current index then trap water 
+                
                 //int minOfMaxes = Math.Min(leftMax, rightMax);
                 //if (minOfMaxes > height[i])
                 //{
@@ -140,7 +144,7 @@ namespace Algorithmic_Patterns.TwoPointer.Hard
 
 
                 ////////////////////// or ///////////////////////////////////////////////////////////
-
+                // this is more acurate - see PPT 
                 // Add trapped water only when both sides are greater than the current height
                 // if both side of wall is heigher than current index
                 if (leftMax > height[i] && rightMax > height[i])
