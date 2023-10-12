@@ -18,7 +18,7 @@ namespace Algorithmic_Patterns.TwoPointer.Easy
         /// <param name="nums"></param>
         /// <param name="target"></param>
         /// <returns></returns>     
-        public int[] TwoSum_way2_Without_TwoPointer(int[] nums, int target)
+        public int[] TwoSum_Dictionary(int[] nums, int target)
         {
             // Create a dictionary to store the numbers and their corresponding indices
             Dictionary<int, int> numIndices = new Dictionary<int, int>();
@@ -34,7 +34,8 @@ namespace Algorithmic_Patterns.TwoPointer.Easy
                     return new int[] { numIndices[complement], i };
                 }
 
-                // Otherwise, add the current number and its index to the dictionary
+                // Otherwise, add and update the current number and its index to the dictionary
+                // Note -map.Add(nums[i], i); this will not work why? think
                 numIndices[nums[i]] = i;
             }
 
@@ -42,6 +43,8 @@ namespace Algorithmic_Patterns.TwoPointer.Easy
             return new int[0];
         }
         #endregion
+
+
 
         //Time Complexity: O(n^2) && Space Complexity: O(1)
         #region BruteForce N^2

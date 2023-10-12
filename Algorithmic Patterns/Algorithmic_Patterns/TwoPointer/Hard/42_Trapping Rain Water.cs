@@ -69,6 +69,7 @@ namespace Algorithmic_Patterns.TwoPointer.Hard
                 // Step 4: Calculate trapped water
                 // Reason: Water trapping is limited by the shorter height
                 //          we're sure that leftMax is the limiting factor for water trapping at index left
+                // we know that we will take min(left,right) - height[left]
                 if (leftMax < rightMax)
                 {
                     // Reason: Water can be trapped here as leftMax is limiting
@@ -99,12 +100,9 @@ namespace Algorithmic_Patterns.TwoPointer.Hard
         /// Algorithmic Coding Pattern: Nested Loops
         /// Data Structure Used: Array
         /// Company Name: Commonly asked in Amazon, Google, and Facebook
+        /// 
         /// Important Tips and Tricks: 
-        ///     1. Use nested loops to find leftMax and rightMax for each index.
-        ///     2. Minimize the height difference to find the trapped water.
-        /// Lessons Learned:
-        ///     1. Understanding the problem is crucial; a well-defined problem leads to an easier solution.
-        ///     2. Pay close attention to loop conditions to avoid off-by-one errors.
+        ///    
         /// </summary>
         public int Trap_bruteForce(int[] height)
         {
@@ -131,29 +129,15 @@ namespace Algorithmic_Patterns.TwoPointer.Hard
                     rightMax = Math.Max(rightMax, height[j]);
                 }
 
-                #region Any of one will work - critical 
-
-                //// Add trapped water when the minimum of leftMax and rightMax is greater than the current height
-                //// if any of the wall ie heigher than current index then trap water 
-                
-                //int minOfMaxes = Math.Min(leftMax, rightMax);
-                //if (minOfMaxes > height[i])
-                //{
-                //    result += minOfMaxes - height[i];
-                //}
-
-
-                ////////////////////// or ///////////////////////////////////////////////////////////
                 // this is more acurate - see PPT 
                 // Add trapped water only when both sides are greater than the current height
                 // if both side of wall is heigher than current index
                 if (leftMax > height[i] && rightMax > height[i])
                 {
+                    //Finding minium as water can be trapped upto minium wall 
+                    // - height[i] because water can not trapped upto current wall 
                     result += Math.Min(leftMax, rightMax) - height[i];
                 } 
-
-                #endregion
-
             }
 
             // Return the total trapped water
